@@ -49,6 +49,9 @@ public class Gui1 extends JFrame {
 				pane.add(buttongrid);
 				*/
 
+				//Image img = new ImageIcon(this.getClass().getResource("/Eiffel.jpg")).getImage();
+
+
 		}
 		public static void main(String[] args) {
 			  Gui1 f = new Gui1();
