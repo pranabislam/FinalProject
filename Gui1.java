@@ -1,5 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import java.io.File;
+
 
 public class Gui1 extends JFrame {
 
@@ -21,7 +25,7 @@ public class Gui1 extends JFrame {
 				pane.setLayout(new FlowLayout());
 				b1 = new JButton("Click me");
 				pane.add(b1);
-				b2 = new JButton("exit");
+				b2 = new JButton("exit");  
 				pane.add(b2);
 
 				label = new JLabel("The Label:");
@@ -50,6 +54,15 @@ public class Gui1 extends JFrame {
 				*/
 
 				//Image img = new ImageIcon(this.getClass().getResource("/Eiffel.jpg")).getImage();
+
+				BufferedImage myPicture = null;
+				try {
+				    myPicture = ImageIO.read(new File("/Images/Eiffel.jpg"));
+				} catch(Exception e)
+				    { System.out.println("no file or something error");
+				    }
+				JLabel picLabel = new JLabel(new ImageIcon(myPicture));
+				add(picLabel);
 
 
 		}
