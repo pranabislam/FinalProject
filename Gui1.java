@@ -57,12 +57,12 @@ public class Gui1 extends JFrame {
 
 				BufferedImage myPicture = null;
 				try {
-				    myPicture = ImageIO.read(new File("/Images/Eiffel.jpg"));
+				    myPicture = ImageIO.read(new File("Eiffel.jpg"));
 				} catch(Exception e)
 				    { System.out.println("no file or something error");
 				    }
 				JLabel picLabel = new JLabel(new ImageIcon(myPicture));
-				add(picLabel);
+				pane.add(picLabel);
 
 
 		}
