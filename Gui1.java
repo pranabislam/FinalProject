@@ -31,16 +31,30 @@ public class Gui1 extends JFrame {
 				label = new JLabel("The Label:");
 				pane.add(label);
 
-				text =new JTextArea();
+				text = new JTextArea();
 				text.setColumns(40);
 				text.setRows(5);
 				text.setBorder(BorderFactory.createLineBorder(Color.red,2));
 				pane.add(text);
 
-				canvas = new JPanel();
+					canvas = new JPanel();
 				canvas.setPreferredSize(new Dimension(300,300));
-				canvas.setBorder(BorderFactory.createLineBorder(Color.blue,2));		
+				canvas.setBorder(BorderFactory.createLineBorder(Color.blue,2));
+				canvas.setLocation(10,10);
+	       													    BufferedImage myPicture = null;
+				try {
+				    myPicture = ImageIO.read(new File("Images/Eiffel.jpg"));
+				} catch(Exception e)
+				    { System.out.println("no file or something error");
+				    }
+				JLabel picLabel = new JLabel(new ImageIcon(myPicture));
+				//pane.add(picLabel);
+				canvas.add(picLabel);
+
 				pane.add(canvas);
+
+
+
 				/*
 				pane.add(new JButton("button 0"));
 				JPanel buttongrid = new JPanel();
@@ -55,7 +69,7 @@ public class Gui1 extends JFrame {
 
 				//Image img = new ImageIcon(this.getClass().getResource("/Eiffel.jpg")).getImage();
 
-				BufferedImage myPicture = null;
+				/*	BufferedImage myPicture = null;
 				try {
 				    myPicture = ImageIO.read(new File("Images/Eiffel.jpg"));
 				} catch(Exception e)
@@ -63,7 +77,7 @@ public class Gui1 extends JFrame {
 				    }
 				JLabel picLabel = new JLabel(new ImageIcon(myPicture));
 				pane.add(picLabel);
-
+				*/
 
 		}
 		public static void main(String[] args) {
