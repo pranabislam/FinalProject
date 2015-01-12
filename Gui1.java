@@ -92,7 +92,7 @@ public class Gui1 extends JFrame {
 	for (int i = 0; i < n; i++){
 	    BufferedImage myPic = null;
 	    try {
-		myPic = ImageIO.read(new File(name + n + ".jpg"));
+		myPic = ImageIO.read(new File("Images/" + name + n + ".jpg"));
 	    } catch (Exception e){
 		System.out.println("no file man cmon");
 	    }
