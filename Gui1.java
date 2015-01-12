@@ -52,7 +52,18 @@ public class Gui1 extends JFrame {
 				canvas.add(picLabel);
 
 				pane.add(canvas);
-
+				/* public void loadImages(File directory) throws IOException {
+					File[] imageFiles = directory.listFiles(fileNameFilter);
+					BufferedImage[] images = new BufferedImage[imageFiles.length];
+					model.removeAllElements();
+					for (int ii=0; ii<images.length; ii++) {
+					    model.addElement(ImageIO.read(imageFiles[ii]));
+					}
+					} */
+			        public void imageAdder(int n, String s){
+				    for (int i = 0; i < n; i++){
+				    ImageIO.read(new File(s + n ".jpg"));
+				    
 
 
 				/*
