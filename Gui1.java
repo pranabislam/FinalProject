@@ -60,11 +60,6 @@ public class Gui1 extends JFrame {
 					    model.addElement(ImageIO.read(imageFiles[ii]));
 					}
 					} */
-			        public void imageAdder(int n, String s){
-				    for (int i = 0; i < n; i++){
-				    ImageIO.read(new File(s + n ".jpg"));
-				    
-
 
 				/*
 				pane.add(new JButton("button 0"));
@@ -91,6 +86,21 @@ public class Gui1 extends JFrame {
 				*/
 
 		}
+
+
+    public void imageAdder(int n, String name){
+	for (int i = 0; i < n; i++){
+	    BufferedImage myPic = null;
+	    try {
+		myPic = ImageIO.read(new File(name + n + ".jpg"));
+	    } catch (Exception e){
+		System.out.println("no file man cmon");
+	    }
+	    JLabel picLabel = new JLabel(new ImageIcon(myPic));
+	    canvas.add(picLabel);
+	}}
+				
+				    
 
 
     /*
