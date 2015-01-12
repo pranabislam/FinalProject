@@ -115,6 +115,8 @@ public class Gui1 extends JFrame {
     */
 		public static void main(String[] args) {
 			  Gui1 f = new Gui1();
+			  f.imageAdder(15, "img");
 				f.setVisible(true);
+				
 		}
 }
