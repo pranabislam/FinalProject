@@ -1,5 +1,7 @@
 FinalProject
 ============
+Group Name: COoked GoOse
+============
 
 Final Project for APCS 
 
