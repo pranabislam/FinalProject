@@ -97,7 +97,7 @@ public class Gui1 extends JFrame {
 		System.out.println("no file man cmon");
 	    }
 	    JLabel picLabel = new JLabel(new ImageIcon(myPic));
-	    canvas.add(picLabel);
+	    pane.add(picLabel);
 	}}
 				
 				    
