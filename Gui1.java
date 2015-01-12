@@ -37,11 +37,11 @@ public class Gui1 extends JFrame {
 				text.setBorder(BorderFactory.createLineBorder(Color.red,2));
 				pane.add(text);
 
-					canvas = new JPanel();
+				canvas = new JPanel();
 				canvas.setPreferredSize(new Dimension(300,300));
 				canvas.setBorder(BorderFactory.createLineBorder(Color.blue,2));
 				canvas.setLocation(10,10);
-	       													    BufferedImage myPicture = null;
+				BufferedImage myPicture = null;
 				try {
 				    myPicture = ImageIO.read(new File("Images/Eiffel.jpg"));
 				} catch(Exception e)
@@ -80,6 +80,18 @@ public class Gui1 extends JFrame {
 				*/
 
 		}
+
+
+    /*
+      Mouse clicker methods
+      click on image
+      drag image
+      place image
+      snap image
+      image on the side 
+      reset
+      
+    */
 		public static void main(String[] args) {
 			  Gui1 f = new Gui1();
 				f.setVisible(true);
