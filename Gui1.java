@@ -89,7 +89,7 @@ public class Gui1 extends JFrame {
 
 
     public void imageAdder(int n, String name){
-	for (int i = 0; i < n; i++){
+	for (int i = 0; i <= n; i++){
 	    BufferedImage myPic = null;
 	    try {
 		myPic = ImageIO.read(new File("Images/" + name + n + ".jpg"));
