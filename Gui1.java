@@ -24,7 +24,7 @@ public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  
 	setLocation(100,100);
 	setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-			pane = getContentPane();
+	//pane = getContentPane();
 	//pane.setLayout(new GridLayout(3,3));
 	/*	pane.setLayout(new FlowLayout());
 	b1 = new JButton("Click me");
@@ -135,10 +135,17 @@ public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  
 	     }
 	 }
 
+
 public void mouseMoved(MouseEvent e) {}
 public void mouseEntered(MouseEvent e) {}
 public void mouseExited(MouseEvent e) {}
 public void mouseClicked(MouseEvent e) {}
+    
+
+
+
+
+
 
     /*
       Mouse clicker methods
