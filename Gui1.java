@@ -4,6 +4,8 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.border.*;
 
 
 public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  {
@@ -13,8 +15,8 @@ public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  
     private JLabel label;
     private JTextArea text;
     private JPanel canvas;
-    private int mouseX = 200;
-    private int mouseY = 100;
+    private int mouseX = 0;
+    private int mouseY = 0;
     private boolean drag = false;
 
     public Gui1(){
@@ -42,8 +44,8 @@ public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  
 	pane.add(text);
 	*/
 
-		canvas = new JPanel();
-		this.add(canvas);
+	canvas = new JPanel();
+	this.add(canvas);
 
 	canvas.setSize(new Dimension(600,600));
 	canvas.setBorder(BorderFactory.createLineBorder(Color.blue,2));
@@ -107,15 +109,18 @@ public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  
 		System.out.println("no file man cmon");
 	    }
 	    JLabel picLabel = new JLabel(new ImageIcon(myPic));
-	    picLabel.setBounds(mouseX, mouseY, 100, 50);
-	    picLabel.addMouseMotionListener(this);
-	    picLabel.addMouseListener(this);
+	    picLabel.setBounds(0, 0, 50, 50); // Okay this is clearly not working like it should. It doesn't set image height or width
+	    Gui1 mousy = new Gui1();
+	    picLabel.addMouseListener(mousy);
+	    //picLabel.addMouseMotionListener(this);
+	    picLabel.addMouseListener(mousy);
 	    canvas.add(picLabel);
+	    
 	}}
 				
        @Override
      public void mousePressed(MouseEvent e) {
-	   if (e.getSource() == label) {
+	   if (e.getSource() == label) { //why did you write == label? isn't it picLabel?
 	       drag = true;
 	   }
        }
