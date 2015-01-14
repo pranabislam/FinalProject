@@ -3,6 +3,9 @@ FinalProject
 Group Name: COoked GoOse
 ============
 
+We are making an interactive jigsaw puzzle game. Solve the puzzle by moving the pieces with your mouse. Have fun!
+
+
 Final Project for APCS 
 
 Pranab Islam
