@@ -25,25 +25,31 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
 
-public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  {
+public class Gui1 {
 
-    private JButton b1,b2;
-    //    private Container pane;
-    private JLabel label;
-    private JTextArea text;
-    private JPanel canvas;
-    private int mouseX = 0;
-    private int mouseY = 0;
-    public int x = 0;
-    public int y = 0;
-    private boolean drag = false;
+    public static void main(String[] args) {
+        new Gui1();
+    }
 
-    public Gui1(){
-				
-	setTitle("My First Gui");
-	setSize(900,600);
-	setLocation(100,100);
-	setDefaultCloseOperation(EXIT_ON_CLOSE);
+    public Gui1() {    //Constructor for setting up the GUI
+        EventQueue.invokeLater(new Runnable() {
+		@Override
+		public void run() {
+		    try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
+			ex.printStackTrace();
+		    }
+
+		    JFrame frame = new JFrame("Testing");
+		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		    frame.add(new TestPane());
+		    frame.pack();
+		    frame.setLocationRelativeTo(null);
+		    frame.setVisible(true);
+		}
+	    });
+
 
 	//pane = getContentPane();
 	//pane.setLayout(new GridLayout(3,3));
@@ -63,12 +69,6 @@ public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  
 	pane.add(text);
 	*/
 
-	canvas = new JPanel();
-	this.add(canvas);
-
-	canvas.setSize(new Dimension(600,600));
-	canvas.setBorder(BorderFactory.createLineBorder(Color.blue,2));
-	canvas.setLocation(10,10);
 	//	pane.add(canvas);
 
 	/*	BufferedImage myPicture = null;
