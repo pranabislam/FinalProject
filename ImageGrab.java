@@ -19,7 +19,7 @@ import javax.swing.UnsupportedLookAndFeelException;
   public class ImageGrab extends JLayeredPane {
 
         public ImageGrab() {
-            File[] images = new File("C:\\Users\\Pranab\\Desktop\\Test\\New\\Images").listFiles(new FileFilter() {
+            File[] images = new File("Images").listFiles(new FileFilter() {
                 @Override
                 public boolean accept(File pathname) {
                     String name = pathname.getName().toLowerCase();
