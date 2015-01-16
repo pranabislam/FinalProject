@@ -43,7 +43,7 @@ public class Gui1 {
 
 		    JFrame frame = new JFrame("Testing");
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		    frame.add(new TestPane());
+		    frame.add(new ImageGrab());
 		    frame.pack();
 		    frame.setLocationRelativeTo(null);
 		    frame.setVisible(true);
