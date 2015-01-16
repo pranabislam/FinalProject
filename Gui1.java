@@ -6,6 +6,23 @@ import java.io.File;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.*;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.FileFilter;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 
 public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  {
@@ -17,6 +34,8 @@ public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  
     private JPanel canvas;
     private int mouseX = 0;
     private int mouseY = 0;
+    public int x = 0;
+    public int y = 0;
     private boolean drag = false;
 
     public Gui1(){
@@ -99,6 +118,9 @@ public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  
 
     }
 
+    public Dimension getPreferredSize() {
+	return new Dimension(300, 300);
+    }
 
     public void imageAdder(int n, String name){
 	BufferedImage myPic = null;
@@ -109,12 +131,14 @@ public class Gui1 extends JFrame implements MouseListener, MouseMotionListener  
 		System.out.println("no file man cmon");
 	    }
 	    JLabel picLabel = new JLabel(new ImageIcon(myPic));
-	    picLabel.setBounds(0, 0, 50, 50); // Okay this is clearly not working like it should. It doesn't set image height or width
-	    Gui1 mousy = new Gui1();
+	    picLabel.setSize(picLabel.getPreferredSize());
+	    picLabel.setLocation(x, y);
+	    MouseHandler mousy = new MouseHandler();
 	    picLabel.addMouseListener(mousy);
-	    //picLabel.addMouseMotionListener(this);
-	    picLabel.addMouseListener(mousy);
+	    picLabel.addMouseMotionListener(mousy);
 	    canvas.add(picLabel);
+	    x += 25;
+	    y += 25;
 	    
 	}}
 				
