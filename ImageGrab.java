@@ -55,7 +55,7 @@ import javax.swing.UnsupportedLookAndFeelException;
 
         @Override
         public Dimension getPreferredSize() {
-            return new Dimension(800, 800);
+            return new Dimension(1200, 800);
         }
 
         public class MouseHandler extends MouseAdapter {
