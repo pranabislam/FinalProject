@@ -40,7 +40,7 @@ public class Gui1 {
 		    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
 			ex.printStackTrace();
 		    }
-
+		    JLayeredPane pane = new JLayeredPane();
 		    JFrame frame = new JFrame("Testing");
 		    JPanel canvas1 = new JPanel();
 		    JPanel canvas2 = new JPanel();
@@ -58,7 +58,9 @@ public class Gui1 {
 		    JPanel canvas14 = new JPanel();
 		    JPanel canvas15 = new JPanel();
 		    JPanel canvas16 = new JPanel();
-		   
+		    canvas1.setPreferredSize(new Dimension(300,300));
+		    canvas1.setBorder(BorderFactory.createLineBorder(Color.blue,2));		
+		    pane.add(canvas1);
 		   
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    frame.add(new ImageGrab());
