@@ -20,3 +20,6 @@ We both worked on and finished and Pranab pushed the basic image splitter. Works
 1/9/15 Remi and Pranab both fixed image adding to panel error. 
 
 1/13/15 For the last few days we've been trying to figure out how to utilize mouse actions and dragging images. We have fixed minor bugs up until this point.  
+
+
+1/15/15 Finally we were able to make images move with mouse drag after a total revamping of our code!
