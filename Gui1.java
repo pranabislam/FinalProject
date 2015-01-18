@@ -42,22 +42,24 @@ public class Gui1 {
 		    }
 
 		    JFrame frame = new JFrame("Testing");
-		    JLabel canvas1 = new JLabel();
-		    JLabel canvas2 = new JLabel();
-		    JLabel canvas3 = new JLabel();
-		    JLabel canvas4 = new JLabel();
-		    JLabel canvas5 = new JLabel();
-		    JLabel canvas6 = new JLabel();
-		    JLabel canvas7 = new JLabel();
-		    JLabel canvas8 = new JLabel();
-		    JLabel canvas9 = new JLabel();
-		    JLabel canvas10 = new JLabel();
-		    JLabel canvas11 = new JLabel();
-		    JLabel canvas12 = new JLabel();
-		    JLabel canvas13 = new JLabel();
-		    JLabel canvas14 = new JLabel();
-		    JLabel canvas15 = new JLabel();
-		    JLabel canvas16 = new JLabel();
+		    JPanel canvas1 = new JPanel();
+		    JPanel canvas2 = new JPanel();
+		    JPanel canvas3 = new JPanel();
+		    JPanel canvas4 = new JPanel();
+		    JPanel canvas5 = new JPanel();
+		    JPanel canvas6 = new JPanel();		   
+		    JPanel canvas7 = new JPanel();
+		    JPanel canvas8 = new JPanel();
+		    JPanel canvas9 = new JPanel();
+		    JPanel canvas10 = new JPanel();
+		    JPanel canvas11 = new JPanel();
+		    JPanel canvas12 = new JPanel();
+		    JPanel canvas13 = new JPanel();
+		    JPanel canvas14 = new JPanel();
+		    JPanel canvas15 = new JPanel();
+		    JPanel canvas16 = new JPanel();
+		   
+		   
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    frame.add(new ImageGrab());
 		    frame.pack();
