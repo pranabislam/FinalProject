@@ -33,8 +33,8 @@ import java.util.Random;
 
 
 	    Random rand = new Random();
-	    int x = rand.nextInt(1000);
-            int y = 500 + rand.nextInt(20);
+	    public int x = rand.nextInt(1000);
+            public int y = 500 + rand.nextInt(20);
 	    
             for (File imgFile : images) {
 
