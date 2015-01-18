@@ -15,11 +15,12 @@ import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import java.util.Random;
 
   public class ImageGrab extends JLayeredPane {
 
         public ImageGrab() {
-            File[] images = new File("Images").listFiles(new FileFilter() {
+            File[] images = new File("Images/Splits").listFiles(new FileFilter() {
                 @Override
                 public boolean accept(File pathname) {
                     String name = pathname.getName().toLowerCase();
@@ -30,21 +31,24 @@ import javax.swing.UnsupportedLookAndFeelException;
                 }
             });
 
-            int x = 0;
-            int y = 0;
+
+	    Random rand = new Random();
+	    int x = rand.nextInt(1000);
+            int y = 500 + rand.nextInt(20);
+	    
             for (File imgFile : images) {
 
                 try {
                     BufferedImage img = ImageIO.read(imgFile);
                     JLabel label = new JLabel(new ImageIcon(img));
                     label.setSize(label.getPreferredSize());
-                    label.setLocation(x, y);
+                    label.setLocation(x, y); 
                     MouseHandler mh  = new MouseHandler();
                     label.addMouseListener(mh);
                     label.addMouseMotionListener(mh);
                     add(label);
-                    x += 20;
-                    y += 20;
+                    x = rand.nextInt(1000);
+                    y = 500 + rand.nextInt(20);
                 } catch (IOException exp) {
                     exp.printStackTrace();
                 }

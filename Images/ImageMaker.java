@@ -9,7 +9,7 @@ public class ImageMaker {
    
     public static void main(String[] args) throws IOException {  
   
-        File a = new File("Eiffel.jpg"); // Make a file object with downloaded image 
+        File a = new File("Originals/Eiffel.jpg"); // Make a file object with downloaded image 
         FileInputStream f = new FileInputStream(a);  
         BufferedImage image = ImageIO.read(f); //reading the image file  
   
