@@ -59,8 +59,8 @@ public class Gui1 {
 		    JPanel canvas15 = new JPanel();
 		    JPanel canvas16 = new JPanel();
 		    canvas1.setPreferredSize(new Dimension(300,300));
-		    canvas1.setBorder(BorderFactory.createLineBorder(Color.blue,2));		
-		    pane.add(canvas1);
+		    canvas1.setBorder(BorderFactory.createLineBorder(Color.blue,10));		
+		    pane.add(canvas1, JLayeredPane.DEFAULT_LAYER);
 		   
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    frame.add(new ImageGrab());
