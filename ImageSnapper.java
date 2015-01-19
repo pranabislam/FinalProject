@@ -1,13 +1,13 @@
-import java.awt.Point
+import java.awt.Point;
 
 public class ImageSnapper{
     
-    Point[] = new Point[100];
-    Point[1] = Point(10, 10);
-    Point[2] = Point(40, 10);
-    Point[3] = Point(70, 10);
-    Point[4] = Point(100, 10);
-
+    /* Point[] points = new Point[100];
+    points[1] = new Point(10, 10);
+    points[2] = new Point(40, 10);
+    points[3] = new Point(70, 10);
+    points[4] = new Point(100, 10);
+    */
 
 
 
