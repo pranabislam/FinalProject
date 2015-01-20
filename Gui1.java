@@ -70,8 +70,9 @@ public class Gui1 {
 		   
 		    
 		    Rectangle rect1 = new Rectangle(20, 20, 40, 40);
-		    // pane.add(rect1, JLayeredPane.DEFAULT_LAYER);
+		    //pane.add(rect1, JLayeredPane.DEFAULT_LAYER);
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		    frame.add(pane);
 		    frame.add(new ImageGrab());
 		    frame.pack();
 		    frame.setLocationRelativeTo(null);
