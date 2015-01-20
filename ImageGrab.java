@@ -82,7 +82,12 @@ import java.util.Random;
                 location.x += x;
                 location.y += y;
                 component.setLocation(location);
+		
             }
+	   
+	    public void mouseReleased(MouseEvent e) {
+		Component component = e.getComponent();
+	    }
 
         }
 
