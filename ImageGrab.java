@@ -87,6 +87,8 @@ import java.util.Random;
 	   
 	    public void mouseReleased(MouseEvent e) {
 		Component component = e.getComponent();
+		Point location = component.getLocation();
+		
 	    }
 
         }
