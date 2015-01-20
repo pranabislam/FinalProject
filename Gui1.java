@@ -13,6 +13,7 @@ import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
+import java.awt.Graphics;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
@@ -66,11 +67,13 @@ public class Gui1 {
 		    JPanel canvas16 = new JPanel();
 		    canvas1.setPreferredSize(new Dimension(300,300));
 		    canvas1.setBorder(BorderFactory.createLineBorder(Color.blue,10));	       
-		    pane.add(canvas1, JLayeredPane.DEFAULT_LAYER);
+		    pane.add(canvas1);
 		   
 		    
 		    Rectangle rect1 = new Rectangle(20, 20, 40, 40);
+		    //getGraphics().drawLine(10,10,20,20);
 		    //pane.add(rect1, JLayeredPane.DEFAULT_LAYER);
+		    frame.add(canvas1);
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    frame.add(pane);
 		    frame.add(new ImageGrab());
