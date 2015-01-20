@@ -26,6 +26,13 @@ import javax.swing.UnsupportedLookAndFeelException;
 import java.awt.Rectangle;
 import java.awt.geom.Rectangle2D;
 import java.awt.geom.RectangularShape;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.geom.GeneralPath;
+import java.awt.geom.Line2D;
 
 
 public class Gui1 {
@@ -116,7 +123,6 @@ public class Gui1 {
 		    canvas.add(grid15);
 		    canvas.add(grid16);
        
-
 		    canvas.add(new ImageGrab());
 		    frame.add(canvas);
 
@@ -128,5 +134,28 @@ public class Gui1 {
 		}
 	    });
 
+    }
+    public void paintComponent(Graphics g) {
+	//super.paintComponent(g);
+
+	Graphics2D g2d = (Graphics2D) g;
+
+	float[] dash1 = { 2f, 0f, 2f };
+
+	g2d.drawLine(20, 40, 250, 40);
+
+	BasicStroke bs1 = new BasicStroke(1, 
+					  BasicStroke.CAP_BUTT, 
+					  BasicStroke.JOIN_ROUND, 
+					  1.0f, 
+					  dash1,
+					  2f);
+	g2d.setStroke(bs1);
+	g2d.drawLine(20, 80, 250, 80);
+
+    }
+
+    public void setCanvasBottom() {
+	//Will call in ImageGrab.java, good idea? 
     }
 }
