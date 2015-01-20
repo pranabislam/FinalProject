@@ -88,7 +88,9 @@ import java.util.Random;
 	    public void mouseReleased(MouseEvent e) {
 		Component component = e.getComponent();
 		Point location = component.getLocation();
-		
+		//	if (location.x - 30 <= 10){
+		//  Component.setLocation(30, location.y);
+		//	}
 	    }
 
         }
