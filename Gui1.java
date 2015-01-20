@@ -23,6 +23,9 @@ import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import java.awt.Rectangle;
+import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
 
 
 public class Gui1 {
@@ -40,6 +43,9 @@ public class Gui1 {
 		    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
 			ex.printStackTrace();
 		    }
+
+		    
+		    
 		    JLayeredPane pane = new JLayeredPane();
 		    JFrame frame = new JFrame("Testing");
 		    JPanel canvas1 = new JPanel();
@@ -59,9 +65,12 @@ public class Gui1 {
 		    JPanel canvas15 = new JPanel();
 		    JPanel canvas16 = new JPanel();
 		    canvas1.setPreferredSize(new Dimension(300,300));
-		    canvas1.setBorder(BorderFactory.createLineBorder(Color.blue,10));		
+		    canvas1.setBorder(BorderFactory.createLineBorder(Color.blue,10));	       
 		    pane.add(canvas1, JLayeredPane.DEFAULT_LAYER);
 		   
+		    
+		    Rectangle rect1 = new Rectangle(20, 20, 40, 40);
+		    // pane.add(rect1, JLayeredPane.DEFAULT_LAYER);
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    frame.add(new ImageGrab());
 		    frame.pack();
