@@ -82,7 +82,18 @@ import java.util.Random;
                 location.x += x;
                 location.y += y;
                 component.setLocation(location);
+		
             }
+	   
+	    public void mouseReleased(MouseEvent e) {
+		Component component = e.getComponent();
+		Point location = component.getLocation();
+		int Compx = location.x;
+		int Compy = location.y;
+		/*	if (location.x - 30 <= 10){
+		    Component.setLocation(30, location.y);
+		    }*/
+	    }
 
         }
 

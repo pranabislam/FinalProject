@@ -13,6 +13,7 @@ import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
+import java.awt.Graphics;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
@@ -65,6 +66,7 @@ public class Gui1 {
 		    JPanel canvas14 = new JPanel();
 		    JPanel canvas15 = new JPanel();
 		    JPanel canvas16 = new JPanel();
+<<<<<<< HEAD
 		    */
 		    JButton n = new JButton("N");
 		    //JButton s = new JButton("S");
@@ -72,9 +74,15 @@ public class Gui1 {
 		    //canvas1.setBorder(BorderFactory.createLineBorder(Color.blue,10));	       
 		    //canvas1.add(n);
 		    //pane.add(canvas1, JLayeredPane.DEFAULT_LAYER);
+=======
+		    canvas1.setPreferredSize(new Dimension(300,300));
+		    canvas1.setBorder(BorderFactory.createLineBorder(Color.blue,10));	       
+		    pane.add(canvas1);
+>>>>>>> 629ef94705aaca01146bb93dda41958f5e8e4cfa
 		   
 		    canvas1.setBackground(Color.white);
 		    Rectangle rect1 = new Rectangle(20, 20, 40, 40);
+<<<<<<< HEAD
 		    //pane.add(rect1, JLayeredPane.DEFAULT_LAYER);
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    //frame.add(pane);
@@ -86,6 +94,14 @@ public class Gui1 {
 
 		    
 		    //frame.add(new ImageGrab());
+=======
+		    //getGraphics().drawLine(10,10,20,20);
+		    //pane.add(rect1, JLayeredPane.DEFAULT_LAYER);
+		    frame.add(canvas1);
+		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		    frame.add(pane);
+		    frame.add(new ImageGrab());
+>>>>>>> 629ef94705aaca01146bb93dda41958f5e8e4cfa
 		    frame.pack();
 		    frame.setLocationRelativeTo(null);
 		    frame.setVisible(true);
