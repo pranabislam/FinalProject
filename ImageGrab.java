@@ -90,7 +90,7 @@ import java.util.Random;
 		Point location = component.getLocation();
 		int Compx = location.x;
 		int Compy = location.y;
-		if (location.x - 500 <= 10){
+		if ((location.x - 500 <= 40)&& (location.x - 500 >=-50)){
 		    component.setLocation(500, location.y);
 		}
 	    }
