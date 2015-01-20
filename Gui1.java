@@ -81,3 +81,69 @@ public class Gui1 {
 
     }
 }
+
+	//pane = getContentPane();
+	//pane.setLayout(new GridLayout(3,3));
+	/*	pane.setLayout(new FlowLayout());
+		b1 = new JButton("Click me");
+		pane.add(b1);
+		b2 = new JButton("exit");  
+		pane.add(b2);
+
+		label = new JLabel("The Label:");
+		pane.add(label);
+
+		text = new JTextArea();
+		text.setColumns(40);
+		text.setRows(5);
+		text.setBorder(BorderFactory.createLineBorder(Color.red,2));
+		pane.add(text);
+	*/
+
+	//	pane.add(canvas);
+
+	/*	BufferedImage myPicture = null;
+		try {
+		myPicture = ImageIO.read(new File("Images/Eiffel.jpg"));
+		} catch(Exception e)
+		{ System.out.println("no file or something error");
+		}
+		JLabel picLabel = new JLabel(new ImageIcon(myPicture));
+		//pane.add(picLabel);
+		canvas.add(picLabel);
+
+		pane.add(canvas);
+
+		/* public void loadImages(File directory) throws IOException {
+		File[] imageFiles = directory.listFiles(fileNameFilter);
+		BufferedImage[] images = new BufferedImage[imageFiles.length];
+		model.removeAllElements();
+		for (int ii=0; ii<images.length; ii++) {
+		model.addElement(ImageIO.read(imageFiles[ii]));
+		}
+		} */
+
+	/*
+	  pane.add(new JButton("button 0"));
+	  JPanel buttongrid = new JPanel();
+	  buttongrid.setLayout(new GridLayout(3,3));
+	  buttongrid.add(new JButton("button 0"));
+	  buttongrid.add(new JButton("button 1"));
+	  buttongrid.add(new JButton("button 2"));
+	  buttongrid.add(new JButton("button 3"));
+	  buttongrid.add(new JButton("button 4"));
+	  pane.add(buttongrid);
+	*/
+
+	//Image img = new ImageIcon(this.getClass().getResource("/Eiffel.jpg")).getImage();
+
+	/*	BufferedImage myPicture = null;
+		try {
+		myPicture = ImageIO.read(new File("Images/Eiffel.jpg"));
+		} catch(Exception e)
+		{ System.out.println("no file or something error");
+		}
+		JLabel picLabel = new JLabel(new ImageIcon(myPicture));
+		pane.add(picLabel);
+	*/
+
