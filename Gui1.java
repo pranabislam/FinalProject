@@ -81,6 +81,7 @@ public class Gui1 {
 
     }
 }
+
 	//pane = getContentPane();
 	//pane.setLayout(new GridLayout(3,3));
 	/*	pane.setLayout(new FlowLayout());
@@ -145,5 +146,4 @@ public class Gui1 {
 		JLabel picLabel = new JLabel(new ImageIcon(myPicture));
 		pane.add(picLabel);
 	*/
-
 
