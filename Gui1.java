@@ -48,24 +48,26 @@ public class Gui1 {
 		    
 		    //JLayeredPane pane = new JLayeredPane();
 		    JFrame frame = new JFrame("Testing");
-		    JPanel canvas1 = new JPanel();
-		    JPanel canvas2 = new JPanel();
-		    /*
-		    JPanel canvas3 = new JPanel();
-		    JPanel canvas4 = new JPanel();
-		    JPanel canvas5 = new JPanel();
-		    JPanel canvas6 = new JPanel();		   
-		    JPanel canvas7 = new JPanel();
-		    JPanel canvas8 = new JPanel();
-		    JPanel canvas9 = new JPanel();
-		    JPanel canvas10 = new JPanel();
-		    JPanel canvas11 = new JPanel();
-		    JPanel canvas12 = new JPanel();
-		    JPanel canvas13 = new JPanel();
-		    JPanel canvas14 = new JPanel();
-		    JPanel canvas15 = new JPanel();
-		    JPanel canvas16 = new JPanel();
-		    */
+		    JPanel canvas = new JPanel();
+
+		    JPanel grid1 = new JPanel();		    
+		    JPanel grid2 = new JPanel();
+		    JPanel grid3 = new JPanel();
+		    JPanel grid4 = new JPanel();
+		    JPanel grid5 = new JPanel();		   
+		    JPanel grid6 = new JPanel();
+		    JPanel grid7 = new JPanel();
+		    JPanel grid8 = new JPanel();
+		    JPanel grid9 = new JPanel();
+		    JPanel grid10 = new JPanel();
+		    JPanel grid11 = new JPanel();
+		    JPanel grid12 = new JPanel();
+		    JPanel grid13 = new JPanel();
+		    JPanel grid14 = new JPanel();
+		    JPanel grid15 = new JPanel();
+		    JPanel grid16 = new JPanel();
+		    
+
 		    JButton n = new JButton("N");
 		    //JButton s = new JButton("S");
 		    //canvas1.setPreferredSize(new Dimension(300,300));
@@ -73,16 +75,50 @@ public class Gui1 {
 		    //canvas1.add(n);
 		    //pane.add(canvas1, JLayeredPane.DEFAULT_LAYER);
 		   
-		    canvas1.setBackground(Color.white);
-		    Rectangle rect1 = new Rectangle(20, 20, 40, 40);
-		    //pane.add(rect1, JLayeredPane.DEFAULT_LAYER);
+		    canvas.setBackground(Color.white);
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    //frame.add(pane);
 		    //frame.add(s);
-		    canvas2.setBorder(BorderFactory.createLineBorder(Color.blue,10));
-		    canvas1.add(canvas2);
-		    canvas1.add(new ImageGrab());
-		    frame.add(canvas1);
+
+		    grid1.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid2.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid3.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid4.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid5.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid6.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid7.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid8.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid9.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid10.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid11.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid12.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid13.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid14.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid15.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    grid16.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+
+		    grid1.setPreferredSize(new Dimension(300,300));
+		    
+		    canvas.add(grid1);
+		    canvas.add(grid2);
+		    canvas.add(grid3);
+		    canvas.add(grid4);
+		    canvas.add(grid5);
+		    canvas.add(grid6);
+		    canvas.add(grid7);
+		    canvas.add(grid8);
+		    canvas.add(grid9);
+		    canvas.add(grid10);
+		    canvas.add(grid11);
+		    canvas.add(grid12);
+		    canvas.add(grid13);
+		    canvas.add(grid14);
+		    canvas.add(grid15);
+		    canvas.add(grid16);
+       
+
+		    canvas.add(new ImageGrab());
+		    frame.add(canvas);
 
 		    
 		    //frame.add(new ImageGrab());
