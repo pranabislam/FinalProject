@@ -1,14 +1,15 @@
     import javax.imageio.ImageIO;  
     import java.awt.image.BufferedImage;  
     import java.io.*;  
-    import java.awt.*;  
+    import java.awt.*;
+
 
 public class ImageMaker {
-
+    Random r = new Random();
     //boiler plate haahahh
    
     public static void main(String[] args) throws IOException {  
-  
+	
         File a = new File("Originals/Eiffel.jpg"); // Make a file object with downloaded image 
         FileInputStream f = new FileInputStream(a);  
         BufferedImage image = ImageIO.read(f); //reading the image file  
