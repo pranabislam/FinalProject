@@ -55,27 +55,35 @@ public class Gui1 {
 		    
 		    //JLayeredPane pane = new JLayeredPane();
 		    JFrame frame = new JFrame("Testing");
-		    JPanel canvas = new JPanel(){
-			    public void paintComponent(Graphics g) {
-				super.paintComponent(g);
-
-				Graphics2D g2d = (Graphics2D) g;
-
-				//float[] dash1 = { 2f, 0f, 2f };
-
-				g2d.drawLine(20, 40, 250, 40);
-
-				/*	BasicStroke bs1 = new BasicStroke(1, 
-								  BasicStroke.CAP_BUTT, 
-								  BasicStroke.JOIN_ROUND, 
-								  1.0f, 
-								  dash1,
-								  2f);   */
-				//g2d.setStroke(bs1);
-				g2d.drawLine(20, 80, 250, 80);
-
-			    }
-			};
+			JPanel canvas = new JPanel(){
+					    public void paintComponent(Graphics g) {
+						super.paintComponent(g);
+		
+						Graphics2D g2d = (Graphics2D) g;
+		
+						//float[] dash1 = { 2f, 0f, 2f };
+		
+						g2d.drawLine(50, 50, 655, 50);
+		
+						/*	BasicStroke bs1 = new BasicStroke(1, 
+							BasicStroke.CAP_BUTT, 
+							BasicStroke.JOIN_ROUND, 
+							1.0f, 
+							dash1,
+							2f);   */
+						//g2d.setStroke(bs1);
+						g2d.drawLine(50, 161, 655, 161);
+						g2d.drawLine(50, 272, 655, 272);
+						g2d.drawLine(50, 383, 655, 383);
+						g2d.drawLine(50, 494, 655, 494);
+						g2d.drawLine(50, 50, 50, 494);
+						g2d.drawLine(201, 50, 201, 494);
+						g2d.drawLine(352, 50, 352, 494);
+						g2d.drawLine(503, 50, 503, 494);
+						g2d.drawLine(654, 50, 654, 494);
+						
+					    }
+					};
 		    /* JPanel grid1 = new JPanel();		    
 		    JPanel grid2 = new JPanel();
 		    JPanel grid3 = new JPanel();
