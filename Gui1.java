@@ -80,7 +80,7 @@ public class Gui1 {
 						g2d.drawLine(201, 50, 201, 494);
 						g2d.drawLine(352, 50, 352, 494);
 						g2d.drawLine(503, 50, 503, 494);
-						g2d.drawLine(654, 50, 654, 494);
+						g2d.drawLine(655, 50, 655, 494);
 						
 					    }
 			    };
