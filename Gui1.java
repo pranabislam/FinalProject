@@ -55,7 +55,7 @@ public class Gui1 {
 		    
 		    //JLayeredPane pane = new JLayeredPane();
 		    JFrame frame = new JFrame("Testing");
-		    frame.setPreferredSize( new Dimension (1200, 800));
+		    frame.setPreferredSize( new Dimension (1200, 750));
 		    frame.setLayout(new FlowLayout());
 		    JPanel canvas = new JPanel(){
 					    public void paintComponent(Graphics g) {
@@ -118,6 +118,7 @@ public class Gui1 {
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    //frame.add(pane);
 		    //frame.add(s);
+		    canvas.setPreferredSize(new Dimension(880,750));
 		    canvas.setBorder(BorderFactory.createLineBorder(Color.red,5));
 		    //grid1.setBorder(BorderFactory.createLineBorder(Color.blue,7));
 		    /* grid2.setBorder(BorderFactory.createLineBorder(Color.blue,7));
