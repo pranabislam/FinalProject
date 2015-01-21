@@ -57,7 +57,7 @@ public class Gui1 {
 		    JFrame frame = new JFrame("Testing");
 		    JPanel canvas = new JPanel();
 
-		    JPanel grid1 = new JPanel();		    
+		    /* JPanel grid1 = new JPanel();		    
 		    JPanel grid2 = new JPanel();
 		    JPanel grid3 = new JPanel();
 		    JPanel grid4 = new JPanel();
@@ -72,7 +72,8 @@ public class Gui1 {
 		    JPanel grid13 = new JPanel();
 		    JPanel grid14 = new JPanel();
 		    JPanel grid15 = new JPanel();
-		    JPanel grid16 = new JPanel();
+		    JPanel grid16 = new JPanel();  */
+		    //JComponent grid1 = new JComponent();
 		    
 
 		    JButton n = new JButton("N");
@@ -82,13 +83,14 @@ public class Gui1 {
 		    //canvas1.add(n);
 		    //pane.add(canvas1, JLayeredPane.DEFAULT_LAYER);
 		   
-		    canvas.setBackground(Color.white);
+		    // canvas.setBackground(Color.white);
+		    //canvas.setOpaque(false);
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    //frame.add(pane);
 		    //frame.add(s);
-
-		    grid1.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid2.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    canvas.setBorder(BorderFactory.createLineBorder(Color.red,5));
+		    //grid1.setBorder(BorderFactory.createLineBorder(Color.blue,7));
+		    /* grid2.setBorder(BorderFactory.createLineBorder(Color.blue,7));
 		    grid3.setBorder(BorderFactory.createLineBorder(Color.blue,7));
 		    grid4.setBorder(BorderFactory.createLineBorder(Color.blue,7));
 		    grid5.setBorder(BorderFactory.createLineBorder(Color.blue,7));
@@ -102,11 +104,13 @@ public class Gui1 {
 		    grid13.setBorder(BorderFactory.createLineBorder(Color.blue,7));
 		    grid14.setBorder(BorderFactory.createLineBorder(Color.blue,7));
 		    grid15.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid16.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-
-		    grid1.setPreferredSize(new Dimension(300,300));
+		    grid16.setBorder(BorderFactory.createLineBorder(Color.blue,7));   */
 		    
-		    canvas.add(grid1);
+		    
+		    // pane.setPreferredSize(new Dimension(1200,800));
+		    // grid1.setPreferredSize(new Dimension(50,50));
+		    //canvas.add(new ImageGrab());
+		    /*   canvas.add(grid1);
 		    canvas.add(grid2);
 		    canvas.add(grid3);
 		    canvas.add(grid4);
@@ -122,12 +126,23 @@ public class Gui1 {
 		    canvas.add(grid14);
 		    canvas.add(grid15);
 		    canvas.add(grid16);
-       
+		    */
 		    canvas.add(new ImageGrab());
 		    frame.add(canvas);
+		    
+		    
 
+		    // pane.add(grid1);
+		    /*  pane.add(grid2);
+		    pane.add(grid3);
+		    pane.add(grid4); */
+		    
+		    // pane.add(new ImageGrab());
+		    // pane.add(new ImageGrab(), JLayeredPane.DEFAULT_LAYER);
+		    // frame.add(pane);
 		    
 		    //frame.add(new ImageGrab());
+		   
 		    frame.pack();
 		    frame.setLocationRelativeTo(null);
 		    frame.setVisible(true);
