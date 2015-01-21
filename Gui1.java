@@ -55,7 +55,7 @@ public class Gui1 {
 		    
 		    //JLayeredPane pane = new JLayeredPane();
 		    JFrame frame = new JFrame("Testing");
-			JPanel canvas = new JPanel(){
+		    JPanel canvas = new JPanel(){
 					    public void paintComponent(Graphics g) {
 						super.paintComponent(g);
 		
@@ -83,7 +83,8 @@ public class Gui1 {
 						g2d.drawLine(654, 50, 654, 494);
 						
 					    }
-					};
+			    };
+
 		    /* JPanel grid1 = new JPanel();		    
 		    JPanel grid2 = new JPanel();
 		    JPanel grid3 = new JPanel();
@@ -154,7 +155,20 @@ public class Gui1 {
 		    canvas.add(grid15);
 		    canvas.add(grid16);
 		    */
+
+
+		    JPanel box = new JPanel();
+		    box.setPreferredSize( new Dimension( 200, 50 ) );
+		    box.setBorder(BorderFactory.createLineBorder(Color.blue,2));
+
+
+		    JLabel a = new JLabel("Wecome to Puzzle solver");
+		    box.add(a);
+
 		    canvas.add(new ImageGrab());
+		    canvas.add(box);
+		    //  box.setLocation(600,400); --> LOCATION WONT SET
+
 		    frame.add(canvas);
 		    
 		    
