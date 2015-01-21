@@ -55,7 +55,7 @@ public class Gui1 {
 		    
 		    //JLayeredPane pane = new JLayeredPane();
 		    JFrame frame = new JFrame("Testing");
-		      JPanel canvas = new JPanel(){
+		    JPanel canvas = new JPanel(){
 			    public void paintComponent(Graphics g) {
 				super.paintComponent(g);
 
@@ -76,7 +76,6 @@ public class Gui1 {
 
 			    }
 			};
-
 		    /* JPanel grid1 = new JPanel();		    
 		    JPanel grid2 = new JPanel();
 		    JPanel grid3 = new JPanel();
