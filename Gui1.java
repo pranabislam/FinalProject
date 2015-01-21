@@ -61,17 +61,17 @@ public class Gui1 {
 
 				Graphics2D g2d = (Graphics2D) g;
 
-				float[] dash1 = { 2f, 0f, 2f };
+				//float[] dash1 = { 2f, 0f, 2f };
 
 				g2d.drawLine(20, 40, 250, 40);
 
-				BasicStroke bs1 = new BasicStroke(1, 
+				/*	BasicStroke bs1 = new BasicStroke(1, 
 								  BasicStroke.CAP_BUTT, 
 								  BasicStroke.JOIN_ROUND, 
 								  1.0f, 
 								  dash1,
-								  2f);
-				g2d.setStroke(bs1);
+								  2f);   */
+				//g2d.setStroke(bs1);
 				g2d.drawLine(20, 80, 250, 80);
 
 			    }
