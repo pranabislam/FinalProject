@@ -33,7 +33,7 @@ import java.util.Random;
 
 
 	    Random rand = new Random();
-	    int x = rand.nextInt(1000);
+	    int x = rand.nextInt(750);
             int y = 500 + rand.nextInt(20);
 	    
             for (File imgFile : images) {
@@ -47,7 +47,7 @@ import java.util.Random;
                     label.addMouseListener(mh);
                     label.addMouseMotionListener(mh);
                     add(label);
-                    x = rand.nextInt(1000);
+                    x = rand.nextInt(750);
                     y = 500 + rand.nextInt(20);
                 } catch (IOException exp) {
                     exp.printStackTrace();

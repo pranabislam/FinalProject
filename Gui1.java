@@ -55,6 +55,8 @@ public class Gui1 {
 		    
 		    //JLayeredPane pane = new JLayeredPane();
 		    JFrame frame = new JFrame("Testing");
+		    frame.setPreferredSize( new Dimension (1200, 800));
+		    frame.setLayout(new FlowLayout());
 		    JPanel canvas = new JPanel(){
 					    public void paintComponent(Graphics g) {
 						super.paintComponent(g);
