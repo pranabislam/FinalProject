@@ -5,7 +5,6 @@
 
 
 public class ImageMaker {
-    Random r = new Random();
     //boiler plate haahahh
    
     public static void main(String[] args) throws IOException {  
