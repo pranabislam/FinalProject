@@ -168,10 +168,11 @@ public class Gui1 {
 		    box.add(a);
 
 		    canvas.add(new ImageGrab());
-		    canvas.add(box);
+		    //   canvas.add(box);
 		    //  box.setLocation(600,400); --> LOCATION WONT SET
 
 		    frame.add(canvas);
+		    frame.add(box);
 		    
 		    
 
