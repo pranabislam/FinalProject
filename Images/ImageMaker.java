@@ -13,7 +13,7 @@ public class ImageMaker {
         FileInputStream f = new FileInputStream(a);  
         BufferedImage image = ImageIO.read(f); //reading the image file  
   
-        int rows = 4; //Constructor to come to generalize algorithm  
+        int rows = 4; //4 by 4 means 16 images
         int cols = 4;  
         int pieces = rows * cols;  
   

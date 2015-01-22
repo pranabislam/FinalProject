@@ -58,34 +58,34 @@ public class Gui1 {
 		    frame.setLayout(new FlowLayout());
 		   
 		    final JPanel canvas = new JPanel(){
-					    public void paintComponent(Graphics g) {
-						super.paintComponent(g);
+			    public void paintComponent(Graphics g) {
+				super.paintComponent(g);
 		
-						Graphics2D g2d = (Graphics2D) g;
+				Graphics2D g2d = (Graphics2D) g;
 		
-						//float[] dash1 = { 2f, 0f, 2f };
+				//float[] dash1 = { 2f, 0f, 2f };
 		
-						g2d.drawLine(50, 50, 655, 50);
+				g2d.drawLine(50, 50, 655, 50);
 		
-						/*	BasicStroke bs1 = new BasicStroke(1, 
-							BasicStroke.CAP_BUTT, 
-							BasicStroke.JOIN_ROUND, 
-							1.0f, 
-							dash1,
-							2f);   */
-						//g2d.setStroke(bs1);
-						g2d.drawLine(50, 161, 655, 161);
-						g2d.drawLine(50, 272, 655, 272);
-						g2d.drawLine(50, 383, 655, 383);
-						g2d.drawLine(50, 494, 655, 494);
-						g2d.drawLine(50, 50, 50, 494);
-						g2d.drawLine(201, 50, 201, 494);
-						g2d.drawLine(352, 50, 352, 494);
-						g2d.drawLine(503, 50, 503, 494);
-						g2d.drawLine(655, 50, 655, 494);
+				/*	BasicStroke bs1 = new BasicStroke(1, 
+					BasicStroke.CAP_BUTT, 
+					BasicStroke.JOIN_ROUND, 
+					1.0f, 
+					dash1,
+					2f);   */
+				//g2d.setStroke(bs1);
+				g2d.drawLine(50, 161, 655, 161);
+				g2d.drawLine(50, 272, 655, 272);
+				g2d.drawLine(50, 383, 655, 383);
+				g2d.drawLine(50, 494, 655, 494);
+				g2d.drawLine(50, 50, 50, 494);
+				g2d.drawLine(201, 50, 201, 494);
+				g2d.drawLine(352, 50, 352, 494);
+				g2d.drawLine(503, 50, 503, 494);
+				g2d.drawLine(655, 50, 655, 494);
 						
-					    }
-			    };
+			    }
+			};
 		    canvas.setLayout(new FlowLayout());
 		   
 		    
@@ -122,6 +122,14 @@ public class Gui1 {
 				canvas.add(new ImageGrabLilies());
 			    }
 			});
+
+		   Original.addActionListener(new ActionListener() {
+			    public void actionPerformed(ActionEvent e) {
+				new OpenImage();
+			    }
+			});
+
+		   
 		   Reset.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
 				reset();
