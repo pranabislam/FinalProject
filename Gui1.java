@@ -165,27 +165,31 @@ public class Gui1 {
 		    */
 
 
-		    /*  JPanel box = new JPanel();
-		    box.setPreferredSize( new Dimension( 200, 50 ) );
+		    JPanel box = new JPanel();
+		    box.setPreferredSize( new Dimension( 200, 200 ) );
 		    box.setBorder(BorderFactory.createLineBorder(Color.blue,2));
+		    box.add(Eiffel);
+		    box.add(Mountain);
+		    box.add(Lilies);
+		    box.add(Goose);
+		    box.add(Original);
 
-
-		    JLabel a = new JLabel("Wecome to Puzzle solver");
-		    box.add(a);
-		    */
+		    // JLabel a = new JLabel("Wecome to Puzzle solver");
+		    // box.add(a);
+		    
 
 		    canvas.add(new ImageGrab());
 		    // canvas.add(box);
 		    //   canvas.add(box);
-		    //  box.setLocation(600,400); --> LOCATION WONT SET
+		    // box.setLocation(600,400); --> LOCATION WONT SET
 		    Eiffel.setLocation(100,100);
 		    frame.add(canvas);
-		    //frame.add(box);
-		    frame.add(Eiffel);
+		    frame.add(box);
+		    /* frame.add(Eiffel);
 		    frame.add(Mountain);
 		    frame.add(Lilies);
 		    frame.add(Goose);
-		    frame.add(Original);
+		    frame.add(Original);   */
 		    
 
 		    // pane.add(grid1);
