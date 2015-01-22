@@ -12,7 +12,6 @@ import java.awt.EventQueue;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
@@ -102,7 +101,7 @@ public class Gui1 {
                      
 		            public void actionPerformed(ActionEvent e) {
 				    canvas.add(new ImageGrab());
-				    canvas.update();
+				    // canvas.update();
 				}         			    
 			});
 
