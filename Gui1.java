@@ -102,6 +102,7 @@ public class Gui1 {
                      
 		            public void actionPerformed(ActionEvent e) {
 				    canvas.add(new ImageGrab());
+				    canvas.update();
 				}         			    
 			});
 
@@ -112,10 +113,8 @@ public class Gui1 {
 			});
 
 		   Goose.addActionListener(new ActionListener() {
-			    public void actionPerformed(ActionEvent e) {
-				
+			    public void actionPerformed(ActionEvent e) {				
 				canvas.add(new ImageGrabGoose());
-				reset();
 			    }
 			});
 
