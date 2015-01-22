@@ -55,7 +55,7 @@ public class Gui1 {
 		    
 		    //JLayeredPane pane = new JLayeredPane();
 		    JFrame frame = new JFrame("Welcome to our Puzzle Game!");
-		    frame.setPreferredSize( new Dimension (1200, 750));
+		    frame.setPreferredSize( new Dimension (1200, 850));
 		    frame.setLayout(new FlowLayout());
 		   
 		    JPanel canvas = new JPanel(){
@@ -112,6 +112,32 @@ public class Gui1 {
 		    JButton Lilies = new JButton("Lilies");
 		    JButton Goose = new JButton("Goose!");
 		    JButton Original = new JButton("Click for pic");
+
+		    Eiffel.addActionListener(new ActionListener() {
+                     
+		            public void actionPerformed(ActionEvent e) {
+				    canvas.add(new ImageGrab());
+				}         			    
+			});
+
+		    Mountain.addActionListener(new ActionListener() {
+			    public void actionPerformed(ActionEvent e) {
+				canvas.add(new ImageGrabMountain());
+			    }
+			});
+
+		   Goose.addActionListener(new ActionListener() {
+			    public void actionPerformed(ActionEvent e) {
+				canvas.add(new ImageGrabGoose());
+			    }
+			});
+
+		   Lilies.addActionListener(new ActionListener() {
+			    public void actionPerformed(ActionEvent e) {
+				canvas.add(new ImageGrabLilies());
+			    }
+			});
+
 		    //JButton s = new JButton("S");
 		    //canvas1.setPreferredSize(new Dimension(300,300));
 		    //canvas1.setBorder(BorderFactory.createLineBorder(Color.blue,10));	       
@@ -174,11 +200,13 @@ public class Gui1 {
 		    box.add(Goose);
 		    box.add(Original);
 
+        
+
 		    // JLabel a = new JLabel("Wecome to Puzzle solver");
 		    // box.add(a);
 		    
 
-		    canvas.add(new ImageGrab());
+		   // canvas.add(new ImageGrab());
 		    // canvas.add(box);
 		    //   canvas.add(box);
 		    // box.setLocation(600,400); --> LOCATION WONT SET

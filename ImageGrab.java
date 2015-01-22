@@ -47,7 +47,7 @@ import java.util.Random;
                     label.addMouseListener(mh);
                     label.addMouseMotionListener(mh);
                     add(label);
-                    x = 30 + rand.nextInt(650);
+                    x = 100 + rand.nextInt(650);
                     y = 500 + rand.nextInt(20);
                 } catch (IOException exp) {
                     exp.printStackTrace();
