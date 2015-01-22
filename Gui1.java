@@ -96,6 +96,7 @@ public class Gui1 {
 		    JButton Lilies = new JButton("Lilies");
 		    JButton Goose = new JButton("Goose!");
 		    JButton Original = new JButton("Click for pic");
+		    JButton Reset = new JButton("Reset");
 
 		    Eiffel.addActionListener(new ActionListener() {
                      
@@ -112,8 +113,9 @@ public class Gui1 {
 
 		   Goose.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
-				canvas.add(new ImageGrabGoose());
 				
+				canvas.add(new ImageGrabGoose());
+				reset();
 			    }
 			});
 
@@ -122,12 +124,17 @@ public class Gui1 {
 				canvas.add(new ImageGrabLilies());
 			    }
 			});
+		   Reset.addActionListener(new ActionListener() {
+			    public void actionPerformed(ActionEvent e) {
+				reset();
+			    }
+			});
 
 		  
 		  
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		 
-		    canvas.setPreferredSize(new Dimension(880,750));
+		    canvas.setPreferredSize(new Dimension(880,650));
 		    canvas.setBorder(BorderFactory.createLineBorder(Color.red,5));
 		 
 		   
@@ -140,7 +147,7 @@ public class Gui1 {
 		    box.add(Lilies);
 		    box.add(Goose);
 		    box.add(Original);
-
+		    box.add(Reset);
         
 
 		    // JLabel a = new JLabel("Wecome to Puzzle solver");
@@ -164,6 +171,9 @@ public class Gui1 {
 
     }
     public void reset(){
-	new Gui1();
+       
+	main(new String[] {"asifi", "sdsd"});
+	
+	
     }
 }
