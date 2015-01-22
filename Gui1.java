@@ -106,7 +106,11 @@ public class Gui1 {
 		    //JComponent grid1 = new JComponent();
 		    
 
-		    JButton n = new JButton("N");
+		    JButton Eiffel = new JButton("Eiffel Tower");
+		    JButton Mountain = new JButton("Mountain");
+		    JButton Lilies = new JButton("Lilies");
+		    JButton Goose = new JButton("Goose!");
+		    JButton Original = new JButton("Click for pic");
 		    //JButton s = new JButton("S");
 		    //canvas1.setPreferredSize(new Dimension(300,300));
 		    //canvas1.setBorder(BorderFactory.createLineBorder(Color.blue,10));	       
@@ -174,7 +178,11 @@ public class Gui1 {
 
 		    frame.add(canvas);
 		    frame.add(box);
-		    
+		    frame.add(Eiffel);
+		    frame.add(Mountain);
+		    frame.add(Lilies);
+		    frame.add(Goose);
+		    frame.add(Original);
 		    
 
 		    // pane.add(grid1);
