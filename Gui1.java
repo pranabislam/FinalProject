@@ -55,10 +55,10 @@ public class Gui1 {
 		    
 		    //JLayeredPane pane = new JLayeredPane();
 		    JFrame frame = new JFrame("Welcome to our Puzzle Game!");
-		    frame.setPreferredSize( new Dimension (1200, 750));
+		    frame.setPreferredSize( new Dimension (1200, 850));
 		    frame.setLayout(new FlowLayout());
 		   
-		    JPanel canvas = new JPanel(){
+		    final JPanel canvas = new JPanel(){
 					    public void paintComponent(Graphics g) {
 						super.paintComponent(g);
 		
@@ -88,23 +88,7 @@ public class Gui1 {
 					    }
 			    };
 		    canvas.setLayout(new FlowLayout());
-		    /* JPanel grid1 = new JPanel();		    
-		    JPanel grid2 = new JPanel();
-		    JPanel grid3 = new JPanel();
-		    JPanel grid4 = new JPanel();
-		    JPanel grid5 = new JPanel();		   
-		    JPanel grid6 = new JPanel();
-		    JPanel grid7 = new JPanel();
-		    JPanel grid8 = new JPanel();
-		    JPanel grid9 = new JPanel();
-		    JPanel grid10 = new JPanel();
-		    JPanel grid11 = new JPanel();
-		    JPanel grid12 = new JPanel();
-		    JPanel grid13 = new JPanel();
-		    JPanel grid14 = new JPanel();
-		    JPanel grid15 = new JPanel();
-		    JPanel grid16 = new JPanel();  */
-		    //JComponent grid1 = new JComponent();
+		   
 		    
 
 		    JButton Eiffel = new JButton("Eiffel Tower");
@@ -112,58 +96,48 @@ public class Gui1 {
 		    JButton Lilies = new JButton("Lilies");
 		    JButton Goose = new JButton("Goose!");
 		    JButton Original = new JButton("Click for pic");
-		    //JButton s = new JButton("S");
-		    //canvas1.setPreferredSize(new Dimension(300,300));
-		    //canvas1.setBorder(BorderFactory.createLineBorder(Color.blue,10));	       
-		    //canvas1.add(n);
-		    //pane.add(canvas1, JLayeredPane.DEFAULT_LAYER);
-		   
-		    // canvas.setBackground(Color.white);
-		    //canvas.setOpaque(false);
-		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		    //frame.add(pane);
-		    //frame.add(s);
-		    canvas.setPreferredSize(new Dimension(880,750));
-		    canvas.setBorder(BorderFactory.createLineBorder(Color.red,5));
-		    //grid1.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    /* grid2.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid3.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid4.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid5.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid6.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid7.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid8.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid9.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid10.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid11.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid12.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid13.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid14.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid15.setBorder(BorderFactory.createLineBorder(Color.blue,7));
-		    grid16.setBorder(BorderFactory.createLineBorder(Color.blue,7));   */
-		    
-		    
-		    // pane.setPreferredSize(new Dimension(1200,800));
-		    // grid1.setPreferredSize(new Dimension(50,50));
-		    //canvas.add(new ImageGrab());
-		    /*   canvas.add(grid1);
-		    canvas.add(grid2);
-		    canvas.add(grid3);
-		    canvas.add(grid4);
-		    canvas.add(grid5);
-		    canvas.add(grid6);
-		    canvas.add(grid7);
-		    canvas.add(grid8);
-		    canvas.add(grid9);
-		    canvas.add(grid10);
-		    canvas.add(grid11);
-		    canvas.add(grid12);
-		    canvas.add(grid13);
-		    canvas.add(grid14);
-		    canvas.add(grid15);
-		    canvas.add(grid16);
-		    */
+		    JButton Reset = new JButton("Reset");
 
+		    Eiffel.addActionListener(new ActionListener() {
+                     
+		            public void actionPerformed(ActionEvent e) {
+				    canvas.add(new ImageGrab());
+				}         			    
+			});
+
+		    Mountain.addActionListener(new ActionListener() {
+			    public void actionPerformed(ActionEvent e) {
+				canvas.add(new ImageGrabMountain());
+			    }
+			});
+
+		   Goose.addActionListener(new ActionListener() {
+			    public void actionPerformed(ActionEvent e) {
+				
+				canvas.add(new ImageGrabGoose());
+				reset();
+			    }
+			});
+
+		   Lilies.addActionListener(new ActionListener() {
+			    public void actionPerformed(ActionEvent e) {
+				canvas.add(new ImageGrabLilies());
+			    }
+			});
+		   Reset.addActionListener(new ActionListener() {
+			    public void actionPerformed(ActionEvent e) {
+				reset();
+			    }
+			});
+
+		  
+		  
+		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		 
+		    canvas.setPreferredSize(new Dimension(880,650));
+		    canvas.setBorder(BorderFactory.createLineBorder(Color.red,5));
+		 
+		   
 
 		    JPanel box = new JPanel();
 		    box.setPreferredSize( new Dimension( 200, 200 ) );
@@ -173,35 +147,21 @@ public class Gui1 {
 		    box.add(Lilies);
 		    box.add(Goose);
 		    box.add(Original);
+		    box.add(Reset);
+        
 
 		    // JLabel a = new JLabel("Wecome to Puzzle solver");
 		    // box.add(a);
 		    
 
-		    canvas.add(new ImageGrab());
+		   // canvas.add(new ImageGrab());
 		    // canvas.add(box);
 		    //   canvas.add(box);
 		    // box.setLocation(600,400); --> LOCATION WONT SET
-		    Eiffel.setLocation(100,100);
+		    //Eiffel.setLocation(100,100);
 		    frame.add(canvas);
 		    frame.add(box);
-		    /* frame.add(Eiffel);
-		    frame.add(Mountain);
-		    frame.add(Lilies);
-		    frame.add(Goose);
-		    frame.add(Original);   */
-		    
-
-		    // pane.add(grid1);
-		    /*  pane.add(grid2);
-		    pane.add(grid3);
-		    pane.add(grid4); */
-		    
-		    // pane.add(new ImageGrab());
-		    // pane.add(new ImageGrab(), JLayeredPane.DEFAULT_LAYER);
-		    // frame.add(pane);
-		    
-		    //frame.add(new ImageGrab());
+		 
 		   
 		    frame.pack();
 		    frame.setLocationRelativeTo(null);
@@ -209,5 +169,11 @@ public class Gui1 {
 		}
 	    });
 
+    }
+    public void reset(){
+       
+	main(new String[] {"asifi", "sdsd"});
+	
+	
     }
 }
