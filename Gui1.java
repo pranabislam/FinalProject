@@ -54,9 +54,10 @@ public class Gui1 {
 		    
 		    
 		    //JLayeredPane pane = new JLayeredPane();
-		    JFrame frame = new JFrame("Testing");
+		    JFrame frame = new JFrame("Welcome to our Puzzle Game!");
 		    frame.setPreferredSize( new Dimension (1200, 750));
 		    frame.setLayout(new FlowLayout());
+		   
 		    JPanel canvas = new JPanel(){
 					    public void paintComponent(Graphics g) {
 						super.paintComponent(g);
@@ -86,7 +87,7 @@ public class Gui1 {
 						
 					    }
 			    };
-
+		    canvas.setLayout(new FlowLayout());
 		    /* JPanel grid1 = new JPanel();		    
 		    JPanel grid2 = new JPanel();
 		    JPanel grid3 = new JPanel();
@@ -164,20 +165,22 @@ public class Gui1 {
 		    */
 
 
-		    JPanel box = new JPanel();
+		    /*  JPanel box = new JPanel();
 		    box.setPreferredSize( new Dimension( 200, 50 ) );
 		    box.setBorder(BorderFactory.createLineBorder(Color.blue,2));
 
 
 		    JLabel a = new JLabel("Wecome to Puzzle solver");
 		    box.add(a);
+		    */
 
 		    canvas.add(new ImageGrab());
+		    // canvas.add(box);
 		    //   canvas.add(box);
 		    //  box.setLocation(600,400); --> LOCATION WONT SET
-
+		    Eiffel.setLocation(100,100);
 		    frame.add(canvas);
-		    frame.add(box);
+		    //frame.add(box);
 		    frame.add(Eiffel);
 		    frame.add(Mountain);
 		    frame.add(Lilies);
