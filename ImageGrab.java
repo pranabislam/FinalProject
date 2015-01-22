@@ -88,64 +88,62 @@ import java.util.Random;
 public void mouseReleased(MouseEvent e) {
 		Component component = e.getComponent();
 		Point location = component.getLocation();
-		int Compx = location.x;
-		int Compy = location.y;
-		if ((location.x - 50 <= 58)&& (location.x - 50 >=-58)&&(location.y - 50 <= 58) && (location.y - 50 >=-58)){
-		    component.setLocation(41,41);
+		if ((location.x - 220 <= 58)&& (location.x - 220 >=-58)&&(location.y - 50 <= 58) && (location.y - 50 >=-58)){
+		    component.setLocation(210,41);
 		}
-		if ((location.x - 201 <= 58)&& (location.x - 201 >=-58)&&(location.y - 50 <= 58) && (location.y - 50 >=-58)){
-		    component.setLocation(192,41);
+		if ((location.x - 371 <= 58)&& (location.x - 371 >=-58)&&(location.y - 50 <= 58) && (location.y - 50 >=-58)){
+		    component.setLocation(360,41);
 		}
-		if ((location.x - 352 <= 58)&& (location.x - 352 >=-58)&&(location.y - 50 <= 58) && (location.y - 50 >=-58)){
-		    component.setLocation(343,41);
+		if ((location.x - 522 <= 58)&& (location.x - 522 >=-58)&&(location.y - 50 <= 58) && (location.y - 50 >=-58)){
+		    component.setLocation(512,41);
 		}
-		if ((location.x - 503 <= 58)&& (location.x - 503 >=-58)&&(location.y - 50 <= 58) && (location.y - 50 >=-58)){
-		    component.setLocation(494,41);
+		if ((location.x - 673 <= 58)&& (location.x - 673 >=-58)&&(location.y - 50 <= 58) && (location.y - 50 >=-58)){
+		    component.setLocation(663,41);
 		}
 
 		//^^First Row Done Snapping finished
 
-		if ((location.x - 50 <= 58)&& (location.x - 50 >=-58)&&(location.y - 161 <= 58) && (location.y - 161 >=-58)){
-		    component.setLocation(41,152);
+		if ((location.x - 220 <= 58)&& (location.x - 220 >=-58)&&(location.y - 161 <= 58) && (location.y - 161 >=-58)){
+		    component.setLocation(210,152);
 		}
-		if ((location.x - 201 <= 58)&& (location.x - 201 >=-58)&&(location.y - 161 <= 58) && (location.y - 161 >=-58)){
-		    component.setLocation(192,152);
+		if ((location.x - 371 <= 58)&& (location.x - 371 >=-58)&&(location.y - 161 <= 58) && (location.y - 161 >=-58)){
+		    component.setLocation(360,152);
 		}
-		if ((location.x - 352 <= 58)&& (location.x - 352 >=-58)&&(location.y - 161 <= 58) && (location.y - 161 >=-58)){
-		    component.setLocation(343,152);
+		if ((location.x - 522 <= 58)&& (location.x - 522 >=-58)&&(location.y - 161 <= 58) && (location.y - 161 >=-58)){
+		    component.setLocation(512,152);
 		}
-		if ((location.x - 503 <= 58)&& (location.x - 503 >=-58)&&(location.y - 161 <= 58) && (location.y - 161 >=-58)){
-		    component.setLocation(494,152);
+		if ((location.x - 673 <= 58)&& (location.x - 673 >=-58)&&(location.y - 161 <= 58) && (location.y - 161 >=-58)){
+		    component.setLocation(663,152);
 		}
 
 		//^^Second Row Snapping done 
 
-		if ((location.x - 50 <= 58)&& (location.x - 50 >=-58)&&(location.y - 272 <= 58) && (location.y - 272 >=-58)){
-		    component.setLocation(41,263);
+		if ((location.x - 220 <= 58)&& (location.x - 220 >=-58)&&(location.y - 272 <= 58) && (location.y - 272 >=-58)){
+		    component.setLocation(210,263);
 		}
-		if ((location.x - 201 <= 58)&& (location.x - 201 >=-58)&&(location.y - 272 <= 58) && (location.y - 272 >=-58)){
-		    component.setLocation(192,263);
+		if ((location.x - 371 <= 58)&& (location.x - 371 >=-58)&&(location.y - 272 <= 58) && (location.y - 272 >=-58)){
+		    component.setLocation(360,263);
 		}
-		if ((location.x - 352 <= 58)&& (location.x - 352 >=-58)&&(location.y - 272 <= 58) && (location.y - 272 >=-58)){
-		    component.setLocation(343,263);
+		if ((location.x - 522 <= 58)&& (location.x - 522 >=-58)&&(location.y - 272 <= 58) && (location.y - 272 >=-58)){
+		    component.setLocation(512,263);
 		}
-		if ((location.x - 503 <= 58)&& (location.x - 503 >=-58)&&(location.y - 272 <= 58) && (location.y - 272 >=-58)){
-		    component.setLocation(494,263);
+		if ((location.x - 673 <= 58)&& (location.x - 673 >=-58)&&(location.y - 272 <= 58) && (location.y - 272 >=-58)){
+		    component.setLocation(663,263);
 		}
 
 		    //^^third row
 
-		if ((location.x - 50 <= 58)&& (location.x - 50 >=-58)&&(location.y - 383 <= 58) && (location.y - 383 >=-58)){
-		    component.setLocation(41,374);
+		if ((location.x - 220 <= 58)&& (location.x - 220 >=-58)&&(location.y - 383 <= 58) && (location.y - 383 >=-58)){
+		    component.setLocation(210,374);
 		}
-		if ((location.x - 201 <= 58)&& (location.x - 201 >=-58)&&(location.y - 383 <= 58) && (location.y - 383 >=-58)){
-		    component.setLocation(192,374);
+		if ((location.x - 371 <= 58)&& (location.x - 371 >=-58)&&(location.y - 383 <= 58) && (location.y - 383 >=-58)){
+		    component.setLocation(360,374);
 		}
-		if ((location.x - 352 <= 58)&& (location.x - 352 >=-58)&&(location.y - 383 <= 58) && (location.y - 383 >=-58)){
-		    component.setLocation(343,374);
+		if ((location.x - 522 <= 58)&& (location.x - 522 >=-58)&&(location.y - 383 <= 58) && (location.y - 383 >=-58)){
+		    component.setLocation(512,374);
 		}
-		if ((location.x - 503 <= 58)&& (location.x - 503 >=-58)&&(location.y - 383 <= 58) && (location.y - 383 >=-58)){
-		    component.setLocation(494,374);
+		if ((location.x - 673 <= 58)&& (location.x - 673 >=-58)&&(location.y - 383 <= 58) && (location.y - 383 >=-58)){
+		    component.setLocation(663,374);
 		}
         
 
