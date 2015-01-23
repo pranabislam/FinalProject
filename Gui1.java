@@ -36,8 +36,13 @@ import java.awt.geom.Line2D;
 
 public class Gui1 {
 
+    private int imageTrack = 0;
+
     public static void main(String[] args) {
         new Gui1();
+    }
+    public int getImageTrack(){
+	return imageTrack;
     }
 
     public Gui1() {    //Constructor for setting up the GUI
@@ -100,25 +105,28 @@ public class Gui1 {
 		    Eiffel.addActionListener(new ActionListener() {
                      
 		            public void actionPerformed(ActionEvent e) {
-				    canvas.add(new ImageGrab());
+				imageTrack = 1;
+				canvas.add(new ImageGrab());
 				    // canvas.update();
 				}         			    
 			});
 
 		    Mountain.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
+				imageTrack = 2;
 				canvas.add(new ImageGrabMountain());
 			    }
 			});
 
-		   Goose.addActionListener(new ActionListener() {
-			    public void actionPerformed(ActionEvent e) {				
+		    Goose.addActionListener(new ActionListener() {
+			    public void actionPerformed(ActionEvent e) {				        imageTrack = 3;
 				canvas.add(new ImageGrabGoose());
 			    }
 			});
 
 		   Lilies.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
+				imageTrack = 4;
 				canvas.add(new ImageGrabLilies());
 			    }
 			});

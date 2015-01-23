@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
+import java.io.*;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -26,6 +27,8 @@ import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import java.io.IOException;
+
 
 public class OpenImage{
      public static void main(String[] args) {
@@ -44,11 +47,31 @@ public class OpenImage{
 
                 JFrame frame = new JFrame("Original Picture");
 		frame.setPreferredSize( new Dimension (700, 500));
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+               
+		
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
             }
         });
     }
+    public BufferedImage getOG() throws IOException{
+	Gui1 j = new Gui1();
+	if (j.getImageTrack() == 1){
+	    File img = new File("Images/Originals/Eiffel.jpg");
+	    FileInputStream f = new FileInputStream(img);
+	    BufferedImage imgbuff = ImageIO.read(f);
+	    return imgbuff;
+	}
+	else{
+	    File img = new File("Images/Originals/Eiffel.jpg");
+	    FileInputStream f = new FileInputStream(img);
+	    BufferedImage imgbuff = ImageIO.read(f);
+	    return imgbuff;
+	}
+		 }
+	    
+    
 }
