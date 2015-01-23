@@ -38,3 +38,13 @@ Bug: Coordinates seem to be moving with the window size of th frame.
 
 1/21/15 Gave all major components set sizes and fixed the window moving/images not following coordinate bug. Added buttons and new sets of images. Fixed more layout issues.
 Bugs: When you start Gui1.java, nothing shows up. But when you shake you move your window  (on Remi's computer) or when you full screen/snap the window to half screen for Pranab, then the images show. These things seem like they have nothing to do with java so we don't understand why this is happening. Also, reset() can be improved but we can't find how to code it to restart in the same window, and make it smoother.
+
+1/22/15 Added the pop up windows after many different attempts. Now the original image pops up in a separate GUI and you can look at the image while solving the puzzle!
+
+Bugs/Things I don't like: Reset button opens up a new gui, doesnt actually reset the current GUI, so the old GUI is still in the background. 
+
+If you close 1 screen, all screens close.
+
+You cant start a new game by just clicking a different image's button, but you can open the different images without changing the current puzzle game; so there can be infinitely many open pics of the goose or the mountain, while you're still playing the eiffel tower. 
+
+The puzzle pieces only show up after you stretch or shrink the window in some way. Really hate this bug.
