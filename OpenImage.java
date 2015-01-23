@@ -44,12 +44,24 @@ public class OpenImage{
                 } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
                     ex.printStackTrace();
                 }
-
+		
                 JFrame frame = new JFrame("Original Picture");
 		frame.setPreferredSize( new Dimension (700, 500));
-               
-		
-		
+		/*	Gui1 j = new Gui1();
+		File img;
+		try{
+		    if (j.getImageTrack() == 1){
+			img = new File("Images/Originals/Eiffel.jpg");
+			FileInputStream f = new FileInputStream(img);
+			BufferedImage imgbuff = ImageIO.read(f);
+			frame.add(imgbuff);
+		    }
+		}
+		    catch (Exception e){
+		    }  */
+
+		//	frame.add();
+		frame.add(new JLabel(new ImageIcon("Images/Originals/Eiffel.jpg")));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null);
