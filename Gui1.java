@@ -147,19 +147,21 @@ public class Gui1 {
 		  
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		 
-		    canvas.setPreferredSize(new Dimension(880,650));
-		    canvas.setBorder(BorderFactory.createLineBorder(Color.red,5));
+		    canvas.setPreferredSize(new Dimension(880,700));
+		    canvas.setBorder(BorderFactory.createLineBorder(Color.red,2));
 		 
 		   
+		    JLabel message = new JLabel("<html>Click one of the following<br>buttons as your puzzle.<br> Try and add the picture to <br>the grid so they match the<br> original photo! And when you're<br> done, you can press reset and<br> try the other puzzles! Have fun!</html>");
 
 		    JPanel box = new JPanel();
-		    box.setPreferredSize( new Dimension( 200, 200 ) );
+		    box.setPreferredSize( new Dimension( 250, 270 ) );
 		    box.setBorder(BorderFactory.createLineBorder(Color.blue,2));
+		    box.add(Reset);
+		    box.add(message);
 		    box.add(Eiffel);
 		    box.add(Mountain);
 		    box.add(Lilies);
 		    box.add(Goose);
-		    box.add(Reset);
         
 		    frame.add(canvas);
 		    frame.add(box);
