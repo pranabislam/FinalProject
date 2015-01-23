@@ -47,6 +47,7 @@ public class Gui1 {
     public Gui1(int k){
 	
     }
+
     public Gui1() {    //Constructor for setting up the GUI
         EventQueue.invokeLater(new Runnable() {
 		@Override
@@ -59,7 +60,6 @@ public class Gui1 {
 
 		    
 		    
-		    //JLayeredPane pane = new JLayeredPane();
 		    final JFrame frame = new JFrame("Welcome to our Puzzle Game!");
 		    frame.setPreferredSize( new Dimension (1200, 850));
 		    frame.setLayout(new FlowLayout());
@@ -73,17 +73,8 @@ public class Gui1 {
 		
 				Graphics2D g2d = (Graphics2D) g;
 		
-				//float[] dash1 = { 2f, 0f, 2f };
-		
+				//Draws the grid on canvas
 				g2d.drawLine(50, 50, 655, 50);
-		
-				/*	BasicStroke bs1 = new BasicStroke(1, 
-					BasicStroke.CAP_BUTT, 
-					BasicStroke.JOIN_ROUND, 
-					1.0f, 
-					dash1,
-					2f);   */
-				//g2d.setStroke(bs1);
 				g2d.drawLine(50, 161, 655, 161);
 				g2d.drawLine(50, 272, 655, 272);
 				g2d.drawLine(50, 383, 655, 383);
@@ -106,14 +97,14 @@ public class Gui1 {
 		    JButton Goose = new JButton("Goose!");
 		    JButton Reset = new JButton("Reset");
 
+		    //When each button is pushed, canvas grabs the ImageGrab for that photo and opens a new window with original (not split) image for reference. 
+
 		    Eiffel.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
 		        	canvas.add(new ImageGrab());
 				imageTrack = 1;
 				OpenImage eif = new OpenImage();
 				frame.setVisible(true);
-
-				    // canvas.update();
 				}         			    
 			});
 
@@ -144,20 +135,11 @@ public class Gui1 {
 			    }
 			});
 
-		   /*   Original.addActionListener(new ActionListener() {
-			    public void actionPerformed(ActionEvent e) {
-					if (imageTrack == 1){
-				new OpenImage();
-				}
-				} 
-				});  */
-
-		   
+		   //Resets the canvas
 		   Reset.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
 			        canvas.removeAll();
 				canvas.repaint();
-				//	delete(OpenImage());
 			    }
 			});
 
@@ -179,16 +161,6 @@ public class Gui1 {
 		    box.add(Goose);
 		    box.add(Reset);
         
-
-		    // JLabel a = new JLabel("Wecome to Puzzle solver");
-		    // box.add(a);
-		    
-
-		   // canvas.add(new ImageGrab());
-		    // canvas.add(box);
-		    //   canvas.add(box);
-		    // box.setLocation(600,400); --> LOCATION WONT SET
-		    //Eiffel.setLocation(100,100);
 		    frame.add(canvas);
 		    frame.add(box);
 		}
