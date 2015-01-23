@@ -24,7 +24,7 @@ Compile Gui1.java in terminal or powershell and run with "java Gui1"
 - ImageAdder function works - Pranab
 - 1/13/15 For the last few days we've been trying to figure out how to utilize mouse actions and dragging images by testing on separate files. We have fixed minor bugs the last few days. - Remi and Pranab
 
-- 1/15/15 Revamped code entirely and mouse drag and mouse pressed works like a charm. Added a new file, ImageGrab.java - Pranab with Remi's help. 
+- 1/15/15 Revamped code entirely and mouse drag and mouse pressed works like a charm. Removed many old/badly executed methods. Added a new file, ImageGrab.java - Pranab. 
 - 1/16/15 Re-Added the imagesplit file. - Pranab Islam
 
 
