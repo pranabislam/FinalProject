@@ -47,8 +47,8 @@ public class OpenImage{
 		
                 JFrame frame = new JFrame("Original Picture");
 		frame.setPreferredSize( new Dimension (700, 500));
-		/*	Gui1 j = new Gui1();
-		File img;
+		Gui1 j = new Gui1(1);
+		/*File img;
 		try{
 		    if (j.getImageTrack() == 1){
 			img = new File("Images/Originals/Eiffel.jpg");

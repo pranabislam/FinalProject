@@ -44,7 +44,9 @@ public class Gui1 {
     public int getImageTrack(){
 	return imageTrack;
     }
-
+    public Gui1(int k){
+	
+    }
     public Gui1() {    //Constructor for setting up the GUI
         EventQueue.invokeLater(new Runnable() {
 		@Override
