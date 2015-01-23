@@ -76,7 +76,7 @@ public class OpenImageGoose{
 
 		*/
 		frame.add(new JLabel(new ImageIcon("Images/Originals/Goose.jpg")));
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
