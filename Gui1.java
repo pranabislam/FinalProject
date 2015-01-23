@@ -36,7 +36,7 @@ import java.awt.geom.Line2D;
 
 public class Gui1 {
 
-    private int imageTrack = 0;
+    public int imageTrack = 0;
 
     public static void main(String[] args) {
         new Gui1();

@@ -61,7 +61,18 @@ public class OpenImage{
 		    }  */
 
 		//	frame.add();
-		frame.add(new JLabel(new ImageIcon("Images/Originals/Eiffel.jpg")));
+		if (j.imageTrack == 1){
+		    frame.add(new JLabel(new ImageIcon("Images/Originals/Eiffel.jpg")));
+		}
+		if (j.getImageTrack() == 2){
+		    frame.add(new JLabel(new ImageIcon("Images/Originals/Mountain.jpg")));
+		}
+		if (j.getImageTrack() == 3){
+		    frame.add(new JLabel(new ImageIcon("Images/Originals/Goose.jpg")));
+		}
+		if (j.getImageTrack() == 4){
+		    frame.add(new JLabel(new ImageIcon("Images/Originals/Lilies.jpg")));
+		}
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null);
