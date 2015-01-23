@@ -3,7 +3,7 @@ FinalProject for APCS
 Group Name: COoked GoOse
 ------------
 **Members: Pranab Islam and Remi Moon. Period 2 Mr. Zamansky**
-Note: Pranab didn't ssh to this git repo because he used a different computer, so there are three authors in this repo (two Pranabs and one Remi). You can see this on Pulse button on the side or the commit history. 
+Note: Pranab didn't ssh to this git repo for much of the time worked on this project because he used a different computer, so there are three authors in this repo (two Pranabs and one Remi). You can see this on Pulse button on the side or the commit history. 
 
 About the Project:
 ------------
