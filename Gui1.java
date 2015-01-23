@@ -108,6 +108,7 @@ public class Gui1 {
                      
 		            public void actionPerformed(ActionEvent e) {
 				imageTrack = 1;
+				OpenImage eif = new OpenImage();
 				canvas.add(new ImageGrab());
 				    // canvas.update();
 				}         			    
@@ -116,12 +117,15 @@ public class Gui1 {
 		    Mountain.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
 				imageTrack = 2;
+				OpenImageMount mount = new OpenImageMount();
 				canvas.add(new ImageGrabMountain());
 			    }
 			});
 
 		    Goose.addActionListener(new ActionListener() {
-			    public void actionPerformed(ActionEvent e) {				        imageTrack = 3;
+			    public void actionPerformed(ActionEvent e) {
+				imageTrack = 3;
+				OpenImageGoose goose = new OpenImageGoose();
 				canvas.add(new ImageGrabGoose());
 			    }
 			});
@@ -129,15 +133,18 @@ public class Gui1 {
 		   Lilies.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
 				imageTrack = 4;
+				OpenImageLilies lil = new OpenImageLilies();
 				canvas.add(new ImageGrabLilies());
 			    }
 			});
 
-		   Original.addActionListener(new ActionListener() {
+		   /*   Original.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
+					if (imageTrack == 1){
 				new OpenImage();
-			    }
-			});
+				}
+				} 
+				});  */
 
 		   
 		   Reset.addActionListener(new ActionListener() {

@@ -30,12 +30,12 @@ import javax.swing.UnsupportedLookAndFeelException;
 import java.io.IOException;
 
 
-public class OpenImage{
+public class OpenImageLilies{
      public static void main(String[] args) {
-        new OpenImage();
+        new OpenImageLilies();
     }
 
-    public OpenImage() {    //Constructor for setting up the GUI
+    public OpenImageLilies() {    //Constructor for setting up the GUI
         EventQueue.invokeLater(new Runnable() {
 		@Override
 	        public void run() {
@@ -75,7 +75,7 @@ public class OpenImage{
 		}
 
 		*/
-		frame.add(new JLabel(new ImageIcon("Images/Originals/Eiffel.jpg")));
+		frame.add(new JLabel(new ImageIcon("Images/Originals/Lilies.jpg")));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null);
@@ -86,13 +86,13 @@ public class OpenImage{
     public BufferedImage getOG() throws IOException{
 	Gui1 j = new Gui1();
 	if (j.getImageTrack() == 1){
-	    File img = new File("Images/Originals/Eiffel.jpg");
+	    File img = new File("Images/Originals/Lilies.jpg");
 	    FileInputStream f = new FileInputStream(img);
 	    BufferedImage imgbuff = ImageIO.read(f);
 	    return imgbuff;
 	}
 	else{
-	    File img = new File("Images/Originals/Eiffel.jpg");
+	    File img = new File("Images/Originals/Lilies.jpg");
 	    FileInputStream f = new FileInputStream(img);
 	    BufferedImage imgbuff = ImageIO.read(f);
 	    return imgbuff;
