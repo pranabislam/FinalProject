@@ -83,21 +83,7 @@ public class OpenImageLilies{
             }
         });
     }
-    public BufferedImage getOG() throws IOException{
-	Gui1 j = new Gui1();
-	if (j.getImageTrack() == 1){
-	    File img = new File("Images/Originals/Lilies.jpg");
-	    FileInputStream f = new FileInputStream(img);
-	    BufferedImage imgbuff = ImageIO.read(f);
-	    return imgbuff;
-	}
-	else{
-	    File img = new File("Images/Originals/Lilies.jpg");
-	    FileInputStream f = new FileInputStream(img);
-	    BufferedImage imgbuff = ImageIO.read(f);
-	    return imgbuff;
-	}
-		 }
+   
 	    
     
 }
