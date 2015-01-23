@@ -66,7 +66,7 @@ public class Gui1 {
 		    frame.pack();
 		    frame.setLocationRelativeTo(null);
 		    frame.setVisible(true);
-		   
+        
 		    final JPanel canvas = new JPanel(){
 			    public void paintComponent(Graphics g) {
 				super.paintComponent(g);
@@ -155,7 +155,9 @@ public class Gui1 {
 		   
 		   Reset.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
-				reset();
+			        canvas.removeAll();
+				canvas.repaint();
+				//	delete(OpenImage());
 			    }
 			});
 
@@ -193,10 +195,6 @@ public class Gui1 {
 	    });
 
     }
-    public void reset(){
-       
-	main(new String[] {"asifi", "sdsd"});
-	
-	
-    }
+   
+
 }
