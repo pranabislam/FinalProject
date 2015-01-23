@@ -74,16 +74,16 @@ public class Gui1 {
 				Graphics2D g2d = (Graphics2D) g;
 		
 				//Draws the grid on canvas
-				g2d.drawLine(50, 50, 655, 50);
-				g2d.drawLine(50, 161, 655, 161);
-				g2d.drawLine(50, 272, 655, 272);
-				g2d.drawLine(50, 383, 655, 383);
-				g2d.drawLine(50, 494, 655, 494);
+				g2d.drawLine(50, 50, 654, 50);
+				g2d.drawLine(50, 161, 654, 161);
+				g2d.drawLine(50, 272, 654, 272);
+				g2d.drawLine(50, 383, 654, 383);
+				g2d.drawLine(50, 494, 654, 494);
 				g2d.drawLine(50, 50, 50, 494);
 				g2d.drawLine(201, 50, 201, 494);
 				g2d.drawLine(352, 50, 352, 494);
 				g2d.drawLine(503, 50, 503, 494);
-				g2d.drawLine(655, 50, 655, 494);
+				g2d.drawLine(654, 50, 654, 494);
 						
 			    }
 			};
