@@ -36,17 +36,11 @@ import java.awt.geom.Line2D;
 
 public class Gui1 {
 
-    public int imageTrack = 0;
-
+   
     public static void main(String[] args) {
         new Gui1();
     }
-    public int getImageTrack(){
-	return imageTrack;
-    }
-    public Gui1(int k){
-	
-    }
+ 
 
     public Gui1() {    //Constructor for setting up the GUI
         EventQueue.invokeLater(new Runnable() {
@@ -102,7 +96,7 @@ public class Gui1 {
 		    Eiffel.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
 		        	canvas.add(new ImageGrab());
-				imageTrack = 1;
+				
 				OpenImage eif = new OpenImage();
 				frame.setVisible(true);
 				}         			    
@@ -110,7 +104,7 @@ public class Gui1 {
 
 		    Mountain.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
-				imageTrack = 2;
+				
 				OpenImageMount mount = new OpenImageMount();
 				canvas.add(new ImageGrabMountain());
 				frame.setVisible(true);
@@ -119,7 +113,7 @@ public class Gui1 {
 
 		    Goose.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
-				imageTrack = 3;
+				
 				OpenImageGoose goose = new OpenImageGoose();
 				canvas.add(new ImageGrabGoose());
 				frame.setVisible(true);
@@ -128,7 +122,7 @@ public class Gui1 {
 
 		   Lilies.addActionListener(new ActionListener() {
 			    public void actionPerformed(ActionEvent e) {
-				imageTrack = 4;
+				
 				OpenImageLilies lil = new OpenImageLilies();
 				canvas.add(new ImageGrabLilies());
 				frame.setVisible(true);
