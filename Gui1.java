@@ -60,7 +60,7 @@ public class Gui1 {
 		    
 		    
 		    //JLayeredPane pane = new JLayeredPane();
-		    JFrame frame = new JFrame("Welcome to our Puzzle Game!");
+		    final JFrame frame = new JFrame("Welcome to our Puzzle Game!");
 		    frame.setPreferredSize( new Dimension (1200, 850));
 		    frame.setLayout(new FlowLayout());
 		    frame.pack();
