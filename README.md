@@ -10,7 +10,7 @@ About the Project:
 We made a puzzle game in Java's GUI. Solve the puzzle by moving the pieces with your mouse. Choose from four images. Have fun! 
 
 **How to run:**
-Compile Gui1.java in terminal or powershell and run with "java Gui1"
+Compile Gui1.java in terminal or powershell and run with "java Gui1". Also PLEASE NOTE: The window size matters! If you don't see the buttons to begin, try changing computer screens! We aren't sure if screen size matters but window size certainly does, and if the window size (even though we set it to 1200 x 850) is too small, you won't see the buttons. We think this is a nonissue for most people though. 
 
 **Work Log:**
 
@@ -55,4 +55,7 @@ Each of the image-related buttons automatically make the pop up window show up, 
 
 Pop up windows don't automatically close when resetting, must manually close it. 
 
+We never got to finish our "you win" pop up idea what congradulates the player if he wins. 
+
+We are not sure if someone with an unusually small computer screen will view our GUI with all the buttons on the screen. 
 
