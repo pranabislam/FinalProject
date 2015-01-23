@@ -6,11 +6,11 @@ Group Name: COoked GoOse
 
 
 
-We are making an interactive jigsaw puzzle game. Solve the puzzle by moving the pieces with your mouse. Have fun!
+*We are making an interactive jigsaw puzzle game. Solve the puzzle by moving the pieces with your mouse. Have fun!
 
 
 
-1/3/15 Didn't push it but was working on an imagesplitting class to split up the images into puzzle pieces (rectangles). 
+- 1/3/15 Didn't push it but was working on an imagesplitting class to split up the images into puzzle pieces (rectangles). 
 
 1/7/15
 We both worked on and finished and Pranab pushed the basic image splitter. Works perfectly, no errors
