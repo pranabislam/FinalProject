@@ -146,7 +146,7 @@ public class Gui1 {
 		    JLabel message = new JLabel("<html>Click one of the following<br>buttons as your puzzle.<br> Try and add the picture to <br>the grid so they match the<br> original photo! And when you're<br> done, you can press reset and<br> try the other puzzles! Have fun!</html>");
 
 		    JPanel box = new JPanel();
-		    box.setPreferredSize( new Dimension( 250, 270 ) );
+		    box.setPreferredSize( new Dimension( 250, 290 ) );
 		    box.setBorder(BorderFactory.createLineBorder(Color.blue,2));
 		    box.add(title);
 		    box.add(Reset);
