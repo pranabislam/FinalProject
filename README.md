@@ -46,9 +46,9 @@ Bugs: When you start Gui1.java, nothing shows up. But when you shake you move yo
 
 - 1/22/15 Added the pop up windows after many different attempts. Now the original image pops up in a separate GUI and you can look at the image while solving the puzzle! Added multiple image opening gui files. Fixed numerous shortcomings in code- Pranab
 
-- 1/22/15 Made a working reset button. Each window closes independently now as well. 
-- 1/23/15 - Code cleanup and fixing some coordinates with images - Remi
-
+- 1/22/15 Made a working reset button. Each window closes independently now as well. - Remi
+- 1/23/15 Code cleanup and fixing some coordinates with images - Remi
+- 1/23/15 Code cleanup, removed imagetrackvariable and changed coordinates again for snapper function. - Pranab
 Bugs/Things we don't like: 
 
 Each of the image-related buttons automatically make the pop up window show up, regardless of the puzzle pieces on the screen. You could click Eiffel's button while playing the Goose and have an eiffel and goose pop up. Not a big deal however.
