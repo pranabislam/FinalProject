@@ -63,6 +63,9 @@ public class Gui1 {
 		    JFrame frame = new JFrame("Welcome to our Puzzle Game!");
 		    frame.setPreferredSize( new Dimension (1200, 850));
 		    frame.setLayout(new FlowLayout());
+		    frame.pack();
+		    frame.setLocationRelativeTo(null);
+		    frame.setVisible(true);
 		   
 		    final JPanel canvas = new JPanel(){
 			    public void paintComponent(Graphics g) {
@@ -101,15 +104,15 @@ public class Gui1 {
 		    JButton Mountain = new JButton("Mountain");
 		    JButton Lilies = new JButton("Lilies");
 		    JButton Goose = new JButton("Goose!");
-		    JButton Original = new JButton("Click for pic");
 		    JButton Reset = new JButton("Reset");
 
 		    Eiffel.addActionListener(new ActionListener() {
-                     
-		            public void actionPerformed(ActionEvent e) {
+			    public void actionPerformed(ActionEvent e) {
+		        	canvas.add(new ImageGrab());
 				imageTrack = 1;
 				OpenImage eif = new OpenImage();
-				canvas.add(new ImageGrab());
+				frame.setVisible(true);
+
 				    // canvas.update();
 				}         			    
 			});
@@ -119,6 +122,7 @@ public class Gui1 {
 				imageTrack = 2;
 				OpenImageMount mount = new OpenImageMount();
 				canvas.add(new ImageGrabMountain());
+				frame.setVisible(true);
 			    }
 			});
 
@@ -127,6 +131,7 @@ public class Gui1 {
 				imageTrack = 3;
 				OpenImageGoose goose = new OpenImageGoose();
 				canvas.add(new ImageGrabGoose());
+				frame.setVisible(true);
 			    }
 			});
 
@@ -135,6 +140,7 @@ public class Gui1 {
 				imageTrack = 4;
 				OpenImageLilies lil = new OpenImageLilies();
 				canvas.add(new ImageGrabLilies());
+				frame.setVisible(true);
 			    }
 			});
 
@@ -169,7 +175,6 @@ public class Gui1 {
 		    box.add(Mountain);
 		    box.add(Lilies);
 		    box.add(Goose);
-		    box.add(Original);
 		    box.add(Reset);
         
 
@@ -184,11 +189,6 @@ public class Gui1 {
 		    //Eiffel.setLocation(100,100);
 		    frame.add(canvas);
 		    frame.add(box);
-		 
-		   
-		    frame.pack();
-		    frame.setLocationRelativeTo(null);
-		    frame.setVisible(true);
 		}
 	    });
 
