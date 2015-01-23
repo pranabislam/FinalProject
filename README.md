@@ -1,16 +1,15 @@
-FinalProject
+FinalProject for APCS
 ============
 Group Name: COoked GoOse
-============
+------------
+**Members: Pranab Islam and Remi Moon. Period 2 Mr. Zamansky**
+
+
 
 We are making an interactive jigsaw puzzle game. Solve the puzzle by moving the pieces with your mouse. Have fun!
 
 
-Final Project for APCS 
 
-Pranab Islam
-
-remi moon
 1/3/15 Didn't push it but was working on an imagesplitting class to split up the images into puzzle pieces (rectangles). 
 
 1/7/15
