@@ -61,7 +61,7 @@ public class OpenImage{
 		    }  */
 
 		//	frame.add();
-		if (j.imageTrack == 1){
+		if (j.getImageTrack() == 1){
 		    frame.add(new JLabel(new ImageIcon("Images/Originals/Eiffel.jpg")));
 		}
 		if (j.getImageTrack() == 2){
