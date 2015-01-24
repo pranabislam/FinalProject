@@ -143,7 +143,7 @@ public class Gui1 {
 		    JLabel title = new JLabel("COoked GoOse");
 		    title.setFont(new Font("Serif", Font.PLAIN, 25));
 		   
-		    JLabel message = new JLabel("<html>Click one of the following<br>buttons as your puzzle.<br> Try and add the picture to <br>the grid so they match the<br> original photo! And when you're<br> done, you can press reset and<br> try the other puzzles! Have fun!</html>");
+		    JLabel message = new JLabel("<html>Click one of the following<br>buttons as your puzzle.<br> Try and add the picture to <br>the grid so they match the<br> original photo! And when you're<br> done, you can press reset and<br> try the other puzzles! A pop up <br> will indicate if you have won <br> Have fun!</html>");
 
 		    JPanel box = new JPanel();
 		    box.setPreferredSize( new Dimension( 250, 290 ) );
