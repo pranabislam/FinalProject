@@ -61,17 +61,21 @@ import javax.swing.JOptionPane;
                     JLabel label = new JLabel(new ImageIcon(img));
 
 		String labelName = imgFile + "";
-		labelName = labelName.split("/")[2];
-		label.setName(labelName.split("\\.")[0]);
-
-                    label.setSize(label.getPreferredSize());
-                    label.setLocation(x, y); 
-                    MouseHandler mh  = new MouseHandler();
-                    label.addMouseListener(mh);
-                    label.addMouseMotionListener(mh);
-                    add(label);
-                    x = 200 + rand.nextInt(650);
-                    y = 500 + rand.nextInt(20);
+		String helpName = "";
+		String nameGet = "";
+		int count = 0;
+		labelName = labelName.substring(14);
+	        
+	       	label.setName(labelName.split("\\.")[0]);
+	       
+		label.setSize(label.getPreferredSize());
+		label.setLocation(x, y); 
+		MouseHandler mh  = new MouseHandler();
+		label.addMouseListener(mh);
+		label.addMouseMotionListener(mh);
+		add(label);
+		x = 200 + rand.nextInt(650);
+		y = 500 + rand.nextInt(20);
                 } catch (IOException exp) {
                     exp.printStackTrace();
                 }

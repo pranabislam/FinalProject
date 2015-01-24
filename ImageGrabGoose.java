@@ -60,7 +60,7 @@ import javax.swing.JOptionPane;
 		JLabel label = new JLabel(new ImageIcon(img));
 
 		String labelName = imgFile + "";
-		labelName = labelName.split("/")[2];
+		labelName = labelName.split("/")[1];
 		label.setName(labelName.split("\\.")[0]);
 
 		label.setSize(label.getPreferredSize());
