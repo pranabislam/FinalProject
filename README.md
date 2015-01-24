@@ -1,10 +1,9 @@
-FinalProject for APCS //THERE IS AN ERROR RIGHT NOW, WE ADDED SOMETHING AND NOW THE PROJECT ONLY COMPILES ON MAC COMPUTERS,
-WE WILL FIX IT SOON OR REVERT TO THE OLD WORKING PROJECT
+FinalProject for APCS 
 ============
 Group Name: COoked GoOse
 ------------
 **Members: Pranab Islam and Remi Moon. Period 2 Mr. Zamansky**
-Note: Pranab didn't ssh to this git repo for much of the time worked on this project because he used a different computer, so there are three authors in this repo (two Pranabs and one Remi). You can see this on Pulse button on the side or the commit history. 
+Note: Pranab didn't ssh to this git repo for much of the time worked on this project because he used a different computer, so there are three authors in this repo (two Pranabs and one Remi). Pranab's commits before a certain date aren't visible because of this. You can see this on Pulse button on the side or the commit history. 
 
 About the Project:
 ------------
@@ -50,13 +49,15 @@ Bugs: When you start Gui1.java, nothing shows up. But when you shake you move yo
 - 1/22/15 Made a working reset button. Each window closes independently now as well. - Remi
 - 1/23/15 Code cleanup and fixing some coordinates with images - Remi
 - 1/23/15 Code cleanup, removed imagetrackvariable and changed coordinates again for snapper function. - Pranab
+- 1/24/15 Added the you win function to all sets of images - Remi
+- 1/24/15 Fixed all the you win function's errors and now the project works!!!! - Pranab
+
+
 Bugs/Things we don't like: 
 
 Each of the image-related buttons automatically make the pop up window show up, regardless of the puzzle pieces on the screen. You could click Eiffel's button while playing the Goose and have an eiffel and goose pop up. Not a big deal however.
 
 Pop up windows don't automatically close when resetting, must manually close it. 
-
-We never got to finish our "you win" pop up idea what congradulates the player if he wins. 
 
 We are not sure if someone with an unusually small computer screen will view our GUI with all the buttons on the screen. 
 
