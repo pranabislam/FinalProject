@@ -44,7 +44,7 @@ Also finished image snapping algorithm, works perfectly. Having issues with the 
 
 Bugs: When you start Gui1.java, nothing shows up. But when you shake you move your window  (on Remi's computer) or when you full screen/snap the window to half screen for Pranab, then the images show. These things seem like they have nothing to do with java so we don't understand why this is happening. Also, reset() can be improved but we can't find how to code it to restart in the same window, and make it smoother.
 
-- 1/22/15 Added the pop up windows after many different attempts. Now the original image pops up in a separate GUI and you can look at the image while solving the puzzle! Added multiple image opening gui files. Fixed numerous shortcomings in code- Pranab
+- 1/22/15 Added the pop up windows after many different attempts. Now the original image pops up in a separate GUI and you can look at the image while solving the puzzle! Added multiple image opening gui files (openimage.java, openimagelilies, openimagemountain, openimagegoose). Fixed numerous shortcomings in code - Pranab
 
 - 1/22/15 Made a working reset button. Each window closes independently now as well. - Remi
 - 1/23/15 Code cleanup and fixing some coordinates with images - Remi
