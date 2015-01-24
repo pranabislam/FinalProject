@@ -38,7 +38,7 @@ Serious overlapping issues. Crowding between canvases and images and what not. E
 - 1/20/15 Drew lines to make the grid after jpanels and rectangles didnt work. 
 Also finished image snapping algorithm, works perfectly. Having issues with the window and showing the jpanels again. Current Error: images slide when the window changes length. - Pranab 
 
-- 1/21/15 Added and gave all major components set sizes and fixed the window moving/images not following coordinate bug. Added many image handling files and images after splitting with imagesplitter - Pranab 
+- 1/21/15 Added and gave all major components set sizes and fixed the window moving/images not following coordinate bug. Added many image handling files (for goose, mountain, lilies, and eiffel) and images into a directory after splitting with the respective imagesplitter - Pranab 
 
 - 1/21/15 Added buttons with action listeners and new sets of images. Fixed more layout issues. - Remi
 
