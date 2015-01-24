@@ -16,8 +16,26 @@ import javax.swing.JLayeredPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import java.util.Random;
+import javax.swing.JOptionPane;
+
 
   public class ImageGrabMountain extends JLayeredPane {
+    boolean img0c = false;
+    boolean img1c = false;
+    boolean img2c = false;
+    boolean img3c = false;
+    boolean img4c = false;
+    boolean img5c = false;
+    boolean img6c = false;
+    boolean img7c = false;
+    boolean img8c = false;
+    boolean img9c = false;
+    boolean img10c = false;
+    boolean img11c = false;
+    boolean img12c = false;
+    boolean img13c = false;
+    boolean img14c = false;
+    boolean img15c = false;
 
         public ImageGrabMountain() {
             File[] images = new File("Images/SplitsMountain").listFiles(new FileFilter() {
@@ -41,6 +59,11 @@ import java.util.Random;
                 try {
                     BufferedImage img = ImageIO.read(imgFile);
                     JLabel label = new JLabel(new ImageIcon(img));
+
+		String labelName = imgFile + "";
+		labelName = labelName.split("/")[2];
+		label.setName(labelName.split("\\.")[0]);
+
                     label.setSize(label.getPreferredSize());
                     label.setLocation(x, y); 
                     MouseHandler mh  = new MouseHandler();
@@ -144,7 +167,114 @@ public void mouseReleased(MouseEvent e) {
 		if ((location.x - 673 <= 58)&& (location.x - 673 >=-58)&&(location.y - 383 <= 58) && (location.y - 383 >=-58)){
 		    component.setLocation(664,377);
 		}	
-}
-        }
+ //checks if img0 is in the right location
+	    if(component.getName().equals("img0"))
+		if(component.getLocation().x == 211 && component.getLocation().y == 44)
+		    img0c = true;
+		else
+		    img0c = false;
+	    //checks if img1 is in the right location
+	    if(component.getName().equals("img1"))
+		if( component.getLocation().x == 362 && component.getLocation().y == 44) 
+		    img1c = true;
+		else
+		    img1c = false;
+	    //checks if img2 is in the right location
+	    if(component.getName().equals("img2"))
+		if(component.getLocation().x == 513 && component.getLocation().y == 44) 
+		    img2c = true;
+		else
+		    img2c = false;
+	    //checks if img3 is in the right location
+	    if(component.getName().equals("img3"))
+		if(component.getLocation().x == 664 && component.getLocation().y == 44) 
+		    img3c = true;
+		else
+		    img3c = false;
 
-  }
+
+	    //checks if img4 is in the right location
+	    if(component.getName().equals("img4"))
+		if(component.getLocation().x == 211 && component.getLocation().y == 155) 
+		    img4c = true;
+		else
+		    img4c = false;
+	    //checks if img5 is in the right location
+	    if(component.getName().equals("img5"))
+		if(component.getLocation().x == 362 && component.getLocation().y == 155) 
+		    img5c = true;
+		else
+		    img5c = false;
+	    //checks if img6 is in the right location
+	    if(component.getName().equals("img6"))
+		if(component.getLocation().x == 513 && component.getLocation().y == 155) 
+		    img6c = true;
+		else
+		    img6c = false;
+	    //checks if img7 is in the right location
+	    if(component.getName().equals("img7"))
+		if(component.getLocation().x == 664 && component.getLocation().y == 155) 
+		    img7c = true;
+		else
+		    img7c = false;
+
+
+	    //checks if img8 is in the right location
+	    if(component.getName().equals("img8"))
+		if(component.getLocation().x == 211 && component.getLocation().y == 266) 
+		    img8c = true;
+		else
+		    img8c = false;
+	    //checks if img9 is in the right location
+	    if(component.getName().equals("img9"))
+		if(component.getLocation().x == 362 && component.getLocation().y == 266) 
+		    img9c = true;
+		else
+		    img9c = false;
+	    //checks if img10 is in the right location
+	    if(component.getName().equals("img10"))
+		if(component.getLocation().x == 513 && component.getLocation().y == 266) 
+		    img10c = true;
+		else
+		    img10c = false;
+	    //checks if img11 is in the right location
+	    if(component.getName().equals("img11"))
+		if(component.getLocation().x == 664 && component.getLocation().y == 266) 
+		    img11c = true;
+		else
+		    img11c = false;
+
+
+	    //checks if img12 is in the right location
+	    if(component.getName().equals("img12"))
+		if(component.getLocation().x == 211 && component.getLocation().y == 377) 
+		    img12c = true;
+		else
+		    img12c = false;
+	    //checks if img13 is in the right location
+	    if(component.getName().equals("img13"))
+		if(component.getLocation().x == 362 && component.getLocation().y == 377) 
+		    img13c = true;
+		else
+		    img13c = false;
+	    //checks if img14 is in the right location
+	    if(component.getName().equals("img14"))
+		if(component.getLocation().x == 513 && component.getLocation().y == 377) 
+		    img14c = true;
+		else
+		    img14c = false;
+	    //checks if img15 is in the right location
+	    if(component.getName().equals("img15"))
+		if(component.getLocation().x == 664 && component.getLocation().y == 377) 
+		    img15c = true;
+		else
+		    img15c = false;
+	    //check win condition
+	    if(img0c && img1c && img2c && img3c && img4c && img5c && img6c && img7c && img8c && img9c && img10c && img11c && img12c && img13c && img14c && img15c)
+
+		JOptionPane.showMessageDialog(null, "YOU WIN");  
+	}
+    }
+
+}
+

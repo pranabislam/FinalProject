@@ -19,6 +19,22 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 
   public class ImageGrabGoose extends JLayeredPane {
+    boolean img0c = false;
+    boolean img1c = false;
+    boolean img2c = false;
+    boolean img3c = false;
+    boolean img4c = false;
+    boolean img5c = false;
+    boolean img6c = false;
+    boolean img7c = false;
+    boolean img8c = false;
+    boolean img9c = false;
+    boolean img10c = false;
+    boolean img11c = false;
+    boolean img12c = false;
+    boolean img13c = false;
+    boolean img14c = false;
+    boolean img15c = false;
 
         public ImageGrabGoose() {
             File[] images = new File("Images/SplitsGoose").listFiles(new FileFilter() {
@@ -45,7 +61,6 @@ import javax.swing.JOptionPane;
 
 		String labelName = imgFile + "";
 		labelName = labelName.split("/")[2];
-		//System.out.println(labelName.split("\\.")[0]);
 		label.setName(labelName.split("\\.")[0]);
 
 		label.setSize(label.getPreferredSize());
