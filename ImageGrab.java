@@ -61,9 +61,6 @@ import javax.swing.JOptionPane;
                     JLabel label = new JLabel(new ImageIcon(img));
 
 		String labelName = imgFile + "";
-		String helpName = "";
-		String nameGet = "";
-		int count = 0;
 		labelName = labelName.substring(14);
 	        
 	       	label.setName(labelName.split("\\.")[0]);

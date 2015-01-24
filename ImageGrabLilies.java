@@ -61,7 +61,8 @@ boolean img0c = false;
                     JLabel label = new JLabel(new ImageIcon(img));
 
 		String labelName = imgFile + "";
-		labelName = labelName.split("/")[2];
+		labelName = labelName.substring(20);
+	 
 		label.setName(labelName.split("\\.")[0]);
 
                     label.setSize(label.getPreferredSize());
